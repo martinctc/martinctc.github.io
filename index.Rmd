@@ -3,3 +3,5 @@ title: "Welcome to my website!"
 ---
 
 This page is under construction.
+
+Check out my portfolio and my blog!

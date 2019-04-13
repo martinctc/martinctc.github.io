@@ -11,6 +11,8 @@ I've written four R packages, which are all available on [GitHub](https://www.gi
 * [rwa](https://www.github.com/martinctc/rwa)
 * [textworks](https://www.github.com/martinctc/textworks)
 
+These packages were to some extent "by-products" of the analysis that I've been doing for the last couple of years, which I decided would have greater value developed into packages. If you have any comments or questions about these packages, please get in touch - any feedback would be valuable!
+
 ---
 
 ## EARL Conference 2018 
@@ -29,6 +31,6 @@ Check out my blog on using R for market research and strategy planning below:
 
 ## Interview with Jonathan Ng
 
-Jonathan Ng is a best-selling instructor and Data Scientist who interviewed me on how I use R in a market research and consulting environment, and my personal journey from Excel to R. Check out the full interview here:
+[Jonathan Ng](https://datastrategywithjonathan.com/) is a best-selling instructor and Data Scientist who interviewed me on how I use R in a market research and consulting environment, and my personal journey from Excel to R. Check out the full interview here:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/o9wHpvIYBDM&t" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o9wHpvIYBDM" frameborder="0" allowfullscreen></iframe>

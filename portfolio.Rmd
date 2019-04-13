@@ -4,8 +4,14 @@ title: "Portfolio"
 
 ## My packages
 
-You can find out more about my packages on this page. 
+I've written four R packages, which are all available on [GitHub](https://www.github.com/martinctc):
 
+* [surveytoolbox](https://www.github.com/martinctc/surveytoolbox)
+* [tstoolbox](https://www.github.com/martinctc/tstoolbox)
+* [rwa](https://www.github.com/martinctc/rwa)
+* [textworks](https://www.github.com/martinctc/textworks)
+
+---
 
 ## EARL Conference 2018 
 
@@ -14,8 +20,10 @@ Check out my blog on using R for market research and strategy planning below:
 
 <a href="downloads/EARL 2018 - Swiss Army Knife for Market Research - Martin Chan - 10 September 2018.pdf#" class="download" title="Download slides as PDF">Download slides</a>
 
+---
+
 ## Interview with Jonathan Ng
 
 Jonathan Ng is a best-selling instructor and Data Scientist who interviewed me on how I use R in a market research and consulting environment, and my personal journey from Excel to R. Check out the full interview here:
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=o9wHpvIYBDM&t" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o9wHpvIYBDM&t" frameborder="0" allowfullscreen></iframe>

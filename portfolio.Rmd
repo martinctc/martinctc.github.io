@@ -1,0 +1,15 @@
+---
+title: "Portfolio"
+---
+
+## My packages
+
+You can find out more about my packages on this page. 
+
+
+## EARL Conference 2018 
+
+Check out my blog on using R for market research and strategy planning below:
+<a href="http://www.rainmakerscsi.com/blog/swiss-army-knife-strategy-planning/"> Swiss Army Knife for Strategy Planning </a>
+
+<a href="downloads/EARL 2018 - Swiss Army Knife for Market Research - Martin Chan - 10 September 2018.pdf#" class="download" title="Download slides as PDF">Download slides</a>		

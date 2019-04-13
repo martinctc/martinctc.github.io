@@ -2,6 +2,12 @@
 title: "About me"
 ---
 
-## Header
+## Introduction
 
-Say more about you here.
+I'm a strategy consultant at Rainmakers CSI and a data science enthusiast. 
+
+
+
+## How I got into R
+
+Before I became a big fan of R, I learnt Excel VBA as a  "first language" as I discovered the potential and power of automating repetitive processes with programming. I then came across R and everything that comes with it: a highly active and collaborative community, an incredible range of powerful packages, and the good analysis practice it encourages. 

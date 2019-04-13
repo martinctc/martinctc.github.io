@@ -25,5 +25,5 @@ navbar:
       href: https://github.com/martinctc       # CHANGE HERE 
 output:
   html_document:
-    theme: cosmo
+    theme: united
     highlight: textmate

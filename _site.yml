@@ -13,6 +13,20 @@ navbar:
     - text: "Portfolio"
       icon: fa-file-pdf-o
       href: portfolio.html
+    - text: "Packages"
+      menu:
+      - text: "surveytoolbox"
+        icon: fa-archive
+        href: https://www.github.com/martinctc/surveytoolbox
+      - text: "tstoolbox"
+        icon: fa-archive
+        href: https://www.github.com/martinctc/tstoolbox
+      - text: "rwa"
+        icon: fa-archive
+        href: https://www.github.com/martinctc/rwa
+      - text: "textworks"
+        icon: fa-archive
+        href: https://www.github.com/martinctc/textworks
     - text: "Blog"
       icon: fa-rss
       href: https://martinctc.github.io/blog/  # CHANGE HERE OR DELETE ALL 3 LINES 

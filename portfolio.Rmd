@@ -15,8 +15,13 @@ I've written four R packages, which are all available on [GitHub](https://www.gi
 
 ## EARL Conference 2018 
 
+<div style="float:left; position:relative; width:200px; left: -20px;"> ![Hi there!](images/EARL01.jpeg) </div>
+<div style="float:left; position:relative; width:200px; left: -20px;"> ![Hi there!](images/EARL02.jpeg) </div>
+
+I presented at the EARL Conference 2018 on the challenges of using R for market research, and outlining some of the packages and approaches that help overcome these challenges. 
+
 Check out my blog on using R for market research and strategy planning below:
-<a href="http://www.rainmakerscsi.com/blog/swiss-army-knife-strategy-planning/"> Swiss Army Knife for Strategy Planning </a>
+[Swiss Army Knife for Strategy Planning](http://www.rainmakerscsi.com/blog/swiss-army-knife-strategy-planning)
 
 <a href="downloads/EARL 2018 - Swiss Army Knife for Market Research - Martin Chan - 10 September 2018.pdf#" class="download" title="Download slides as PDF">Download slides</a>
 

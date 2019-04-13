@@ -1,7 +1,14 @@
 ---
-title: "Welcome to my website!"
+title: "Martin Chan"
 ---
 
-This page is under construction.
+<div style="float:left; position:relative; width:200px; left: -20px;"> ![Hi there!](cover.jpg) </div>
 
-Check out my portfolio and my blog!
+
+Hi everyone, I am Martin Chan.
+
+I currently work as a Consultant as part of a team based in London to help our clients solve strategic problems and figuring out ways to grow their business. I'm interested in data science solutions (R, in particular) to make these decision-making processes more well-informed, rigorous, and clear.
+
+I've written four R packages, but at the time of writing these are only available on GitHub and not released on CRAN.
+
+To find out more about my work, check out my [portfolio](https://martinctc.github.io/portfolio) and my [blog](https://martinctc.github.io/blog).

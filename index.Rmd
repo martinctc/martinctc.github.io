@@ -2,13 +2,17 @@
 title: "Martin Chan"
 ---
 
-<div style="float:left; position:relative; width:200px; left: -20px;"> ![Hi there!](cover.jpg) </div>
+<div style="float:right; position:relative; width:200px; right: -40px;"> ![Hi there!](cover.jpg) </div>
 
-I'm Martin Chan, Consultant at Rainmakers CSI. I am part of a team based in London where we help our clients solve strategic problems and grow their businesses profitably. Examples of what we do include opportunity sizing, customer segmentation and trend identification, but the problems we work with tend to be open-ended and therefore no solution is ever off-the-shelf. My interest is in identifying data science solutions (particularly, in R!) in order to make these decision-making processes more well-informed and rigorous. I'm also interested in particular topics such as:
+I'm Martin Chan, Consultant at Rainmakers CSI. I am part of a team based in London where we help our clients solve strategic problems and grow their businesses profitably. Examples of what we do include opportunity sizing, customer segmentation and trend identification, but the problems we work with tend to be open-ended and therefore no solution is ever off-the-shelf. 
 
-* Statistics and epistemology - how do we *know*?
-* Text mining and natural language processing
-* Automating workflows of 'knowledge workers'through programming - to reduce error, increase efficiency, and spend less time doing, more time thinking
+My interest is in identifying data science solutions (particularly, in R!) in order to make these decision-making processes more well-informed and rigorous. I'm also interested in particular topics such as:
+
+- Statistics and epistemology - how do we *know*?
+- Text mining and natural language processing
+- Automating workflows of 'knowledge workers'through programming - to reduce error, increase efficiency, and spend less time doing, more time thinking
+
+---
 
 I've written four R packages, as an exercise to collate and organise the most useful functions that I've written for my analysis. At the time of writing these are only available on GitHub, but the intention is to release them on CRAN at some point. I love interacting with the R community, so you can occasionally spot me at the EARL Conference or the various R Meet-ups in London. Find out more about me [here](https://martinctc.github.io/about).
 

@@ -14,6 +14,8 @@ I currently work as a strategy consultant at Rainmakers CSI, where our key busin
 * Relative Importance Analysis - modelling the importance contributions of inputs
 * Importance-Performance Analysis
 
+I primarily work in R and Excel for data analysis, but I also use a survey analysis software called Q (part of DisplayR). In terms of production, I also use Excel and PowerPoint VBA to improve the quality of our outputs.
+
 ---
 
 ## How I got into R

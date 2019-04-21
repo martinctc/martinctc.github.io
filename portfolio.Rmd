@@ -1,5 +1,9 @@
 ---
 title: "Portfolio"
+output: 
+  html_document:
+    includes:
+       in_header: GA_Script.html
 ---
 
 ## My packages

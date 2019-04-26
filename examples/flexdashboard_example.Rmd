@@ -1,0 +1,114 @@
+---
+title: "flexdashboard example"
+subtitle: "https://martinctc.github.io"
+author: "Martin Chan"
+date: "2019"
+output: 
+  flexdashboard::flex_dashboard:
+  orientation: columns
+  vertical_layout: fill
+---
+
+<style>                     
+.navbar {
+  background-color: rgb(47,85,151);
+}
+
+</style>   
+
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(ggiraph)
+library(ggthemes)
+
+#' Make it pipe friendly
+plot_ggiraph <- function(ggobject, ...){
+  ggiraph::girafe(ggobj = ggobject, ...)
+}
+
+```
+
+
+Home {data-icon="fa-tachometer-alt"}
+=====================================
+
+Column {data-width=150}
+-----------------------------------------------------------------------
+
+### Introduction
+
+This is an example to showcase the visualisations available as a static html flexdashboard.
+
+In this dashboard, we use a number of canonical inbuilt datasets with R to display a variety of visualisations, including time-series charts, interactive scatter plots, word clouds, etc. 
+
+Use the tabs in the navigation bar above to browse through the different visualisations.
+
+Column {data-width=300}
+-----------------------------------------------------------------------
+
+### Check me out!
+```{r}
+iris %>%
+  mutate(tool_tip = paste0("Sepal Length: ", Sepal.Length,
+                          "; Sepal Width: ", Sepal.Width,
+                          "; Species: ", Species)) %>%
+  ggplot(aes(x = Sepal.Length,
+             y = Sepal.Width,
+             colour = Species,
+             data_id = Species,
+             tooltip = tool_tip)) +
+  geom_point_interactive() +
+  ggtitle("Sepal Length and Sepal Width by iris Species",
+          subtitle = "Dataset: iris") +
+  ggthemes::theme_economist() -> gg
+
+ggiraph::girafe(ggobj = gg, width = 7, height = 5)
+
+```
+
+---
+
+
+iris  {data-navmenu="Explore me" data-icon="fa-list"}
+=====================================
+Column {data-width=150}
+-----------------------------------------------------------------------
+
+### Overview 
+
+Welcome to the dashboard! 
+
+Use the above tabs to flick through different visualizations.
+
+This current page is showing data from the *iris* dataset.
+
+---
+
+#### `iris` dataset
+
+This is the famous iris dataset by Ronald Fisher.
+
+Column {data-width=300 .tabset .tabset-fade}
+-----------------------------------------------------------------------
+
+### Interactive scatter plot
+```{r}
+iris %>%
+  mutate(tool_tip = paste0("Sepal Length: ", Sepal.Length,
+                          "; Sepal Width: ", Sepal.Width,
+                          "; Species: ", Species)) %>%
+  ggplot(aes(x = Sepal.Length,
+             y = Sepal.Width,
+             colour = Species,
+             data_id = Species,
+             tooltip = tool_tip)) +
+  geom_point_interactive() +
+  ggtitle("Sepal Length and Sepal Width by iris Species",
+          subtitle = "Dataset: iris") +
+  ggthemes::theme_economist()-> gg
+
+ggiraph::girafe(ggobj = gg, width = 7, height = 5)
+
+```
+

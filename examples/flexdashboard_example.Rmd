@@ -21,11 +21,18 @@ output:
 library(tidyverse)
 library(ggiraph)
 library(ggthemes)
+library(flexdashboard)
+library(dygraphs)
+library(wordcloud2)
+library(janeaustenr)
+library(tidytext)
 
 #' Make it pipe friendly
 plot_ggiraph <- function(ggobject, ...){
   ggiraph::girafe(ggobj = ggobject, ...)
 }
+
+rgb2hex <- function(r,g,b) rgb(r, g, b, maxColorValue = 255)
 
 ```
 
@@ -33,21 +40,51 @@ plot_ggiraph <- function(ggobject, ...){
 Home {data-icon="fa-tachometer-alt"}
 =====================================
 
-Column {data-width=150}
+Column {data-width=120}
 -----------------------------------------------------------------------
 
 ### Introduction
 
-This is an example to showcase the visualisations available as a static html flexdashboard.
+> This is an example to showcase the visualisations we can create in a static HTML file, using the two R packages **flexdashboard** and **RMarkdown**.
 
 In this dashboard, we use a number of canonical inbuilt datasets with R to display a variety of visualisations, including time-series charts, interactive scatter plots, word clouds, etc. 
 
 Use the tabs in the navigation bar above to browse through the different visualisations.
 
-Column {data-width=300}
+### Average Sepal.Width of setosa [iris]
+```{r}
+iris %>%
+  filter(Species == "setosa") %>%
+  pull(Sepal.Width) %>%
+  mean() %>%
+  round(1) %>%
+  valueBox(icon = "fa-spa")
+```
+
+### Average mpg of cars in [mpg] dataset
+```{r}
+mtcars %>% 
+  pull(mpg) %>%
+  mean() %>%
+  round(1) %>%
+  valueBox(color = rgb2hex(150,48,20), icon = "fa-car")
+```
+
+### Average height of beings on Tatooine [starwars]
+```{r}
+starwars %>%
+  filter(homeworld == "Tatooine") %>%
+  pull(height) %>%
+  mean(na.rm = TRUE) %>%
+  round(1) %>%
+  valueBox(color = rgb2hex(112,48,160), icon = "fa-walking")
+```
+
+
+Column {data-width=250}
 -----------------------------------------------------------------------
 
-### Check me out!
+### Interactive Scatter Plot
 ```{r}
 iris %>%
   mutate(tool_tip = paste0("Sepal Length: ", Sepal.Length,
@@ -63,7 +100,42 @@ iris %>%
           subtitle = "Dataset: iris") +
   ggthemes::theme_economist() -> gg
 
-ggiraph::girafe(ggobj = gg, width = 7, height = 5)
+ggiraph::girafe(ggobj = gg, width = 7, height = 4)
+
+```
+
+### Time Series - Lung Deaths
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+lungDeaths <- cbind(mdeaths, fdeaths)
+dygraph(lungDeaths) %>%
+  dySeries("mdeaths", label = "Male") %>%
+  dySeries("fdeaths", label = "Female") %>%
+  dyOptions(stackedGraph = TRUE) %>%
+  dyRangeSelector(height = 20)
+```
+
+Column {data-width=250}
+-----------------------------------------------------------------------
+
+### Downloadable Interactive Table
+```{r}
+mtcars %>%
+    DT::datatable(caption = "mtcars data table with download buttons",
+                extensions = 'Buttons',
+                options = list(bLengthChange = FALSE,
+                               dom = 'Blfrtip',
+                               buttons = c('copy', 'csv', 'excel', 'pdf', 'print'),
+                               lengthMenu = list(c(10,25,50,-1),
+                                                 c(10,25,50,"All"))))
+```
+
+### Word Cloud - Emma (Jane Austen)
+```{r}
+tibble(text = janeaustenr::emma) %>%
+  tidytext::unnest_tokens(word, text) %>%
+  anti_join(stop_words) %>%
+  count(word, sort = TRUE) %>%
+  wordcloud2() + WCtheme(1)
 
 ```
 
@@ -108,7 +180,22 @@ iris %>%
           subtitle = "Dataset: iris") +
   ggthemes::theme_economist()-> gg
 
-ggiraph::girafe(ggobj = gg, width = 7, height = 5)
+ggiraph::girafe(ggobj = gg, width = 7, height = 4.5)
 
+```
+
+### Interactive scatterplot with facets
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+iris %>%
+  mutate(tool_tip = paste(Sepal.Length, Sepal.Width, sep = ", ")) %>%
+  ggplot(aes(x = Sepal.Width, y = Sepal.Length, colour = Species,tooltip = tool_tip, data_id = tool_tip)) +
+  geom_point_interactive() +
+  facet_grid(cols = vars(Species)) +
+  ggtitle("Example of a chart which will be a pain to build in Excel",
+          subtitle = "(Especially if you want the interactivity as well)") +
+  ggthemes::theme_igray()-> gg
+
+ggiraph::girafe(ggobj = gg, width = 7, height = 3.5)
 ```
 

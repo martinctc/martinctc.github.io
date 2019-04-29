@@ -8,7 +8,7 @@ output:
 
 ## My packages
 
-I've written four R packages, which are all available on [GitHub](https://www.github.com/martinctc):
+I've authored four R packages, which are all available on [GitHub](https://www.github.com/martinctc):
 
 * [surveytoolbox](https://www.github.com/martinctc/surveytoolbox)
 * [tstoolbox](https://www.github.com/martinctc/tstoolbox)
@@ -18,6 +18,12 @@ I've written four R packages, which are all available on [GitHub](https://www.gi
 These packages were to some extent "by-products" of the analysis that I've been doing for the last couple of years, which I decided would have greater value developed into packages. If you have any comments or questions about these packages, please get in touch - any feedback would be valuable!
 
 ---
+
+## Blogs
+
+On this same site you can find my [blog](https://martinctc.github.io/blog), where I write about things related to #rstats and data science. I contribute my blogs to [r-bloggers](https://www.r-bloggers.com/) and [R Weekly](https://rweekly.org), which you can find for instance two of my blogs featured in the [2019 Week 17 wave](https://rweekly.org/2019-17.html) on R Weekly.
+
+--
 
 ## EARL Conference 2018 
 

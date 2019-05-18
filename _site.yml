@@ -39,5 +39,5 @@ navbar:
       href: https://github.com/martinctc       # CHANGE HERE 
 output:
   html_document:
-    theme: united
+    theme: darkly
     highlight: textmate

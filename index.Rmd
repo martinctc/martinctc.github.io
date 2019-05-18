@@ -7,7 +7,7 @@ output:
 ---
 
 
-<div style="float:right; position:relative; width:200px; right: -40px;"> ![Hi there!](cover.jpg) </div>
+<div style="float:right; position:relative; width:200px; right: -40px;"> ![Hi there!](cover.svg) </div>
 
 I'm Martin Chan, Consultant at Rainmakers CSI. I am part of a team based in London where we help our clients solve strategic problems and grow their businesses profitably. Examples of what we do include opportunity sizing, customer segmentation and trend identification, but the problems we work with tend to be open-ended and therefore no solution is ever off-the-shelf. 
 

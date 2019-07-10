@@ -21,7 +21,7 @@ These packages were to some extent "by-products" of the analysis that I've been 
 
 ## Blogs
 
-On this same site you can find my [blog](https://martinctc.github.io/blog), where I write about things related to #rstats and data science. I contribute my blogs to [r-bloggers](https://www.r-bloggers.com/) and [R Weekly](https://rweekly.org), which you can find as an example two of my blogs featured in the [2019 Week 17 update](https://rweekly.org/2019-17.html) on R Weekly.
+On this same site you can find my [blog](https://martinctc.github.io/blog), where I write about things related to #rstats and data science. I contribute my blogs to [r-bloggers](https://www.r-bloggers.com/) and [R Weekly](https://rweekly.org), which you can find as an example two of my blogs featured in the [2019 Week 17 update](https://rweekly.org/2019-17.html) on R Weekly. My post on the [state of R artefacts](https://martinctc.github.io/blog/a-short-essay-on-duplicated-r-artefacts/) is also selected as the highlight post of [2019 Week 27](https://rweekly.org/2019-27.html) on R Weekly.
 
 ---
 

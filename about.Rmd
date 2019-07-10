@@ -20,6 +20,8 @@ I currently work as a strategy consultant at Rainmakers CSI, where our key busin
 
 I primarily work in R and Excel for data analysis, but I also use a survey analysis software called Q (part of DisplayR). In terms of production, I also use Excel and PowerPoint VBA to improve the quality of our outputs.
 
+Check out my [LinkedIn](https://www.linkedin.com/in/martin-chan-tc/) to find out more.
+
 ---
 
 ## How I got into R

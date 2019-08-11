@@ -7,6 +7,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -255,18 +256,6 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
@@ -350,6 +339,13 @@ $(document).ready(function () {
         textworks
       </a>
     </li>
+    <li>
+      <a href="https://www.github.com/martinctc/zipcodes">
+        <span class="fa fa-archive"></span>
+         
+        zipcodes
+      </a>
+    </li>
   </ul>
 </li>
 <li>
@@ -391,14 +387,15 @@ $(document).ready(function () {
 
 <div id="my-packages" class="section level2">
 <h2>My packages</h2>
-<p>I’ve authored four R packages, which are all available on <a href="https://www.github.com/martinctc">GitHub</a>:</p>
+<p>I author R packages, which are all available on <a href="https://www.github.com/martinctc">GitHub</a>:</p>
 <ul>
 <li><a href="https://www.github.com/martinctc/surveytoolbox">surveytoolbox</a></li>
 <li><a href="https://www.github.com/martinctc/tstoolbox">tstoolbox</a></li>
 <li><a href="https://www.github.com/martinctc/rwa">rwa</a></li>
 <li><a href="https://www.github.com/martinctc/textworks">textworks</a></li>
+<li>[zipcodes][<a href="https://www.github.com/martinctc/zipcodes" class="uri">https://www.github.com/martinctc/zipcodes</a>]</li>
 </ul>
-<p>These packages were to some extent “by-products” of the analysis that I’ve been doing for the last couple of years, which I decided would have greater value developed into packages. If you have any comments or questions about these packages, please get in touch - any feedback would be valuable!</p>
+<p>Most of these packages were to some extent “by-products” of the analysis that I’ve been doing for the last couple of years, which I decided would have greater value developed into packages. If you have any comments or questions about these packages, please get in touch - any feedback would be valuable!</p>
 <hr />
 </div>
 <div id="blogs" class="section level2">
@@ -443,6 +440,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

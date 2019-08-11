@@ -27,6 +27,9 @@ navbar:
       - text: "textworks"
         icon: fa-archive
         href: https://www.github.com/martinctc/textworks
+      - text: "zipcodes"
+        icon: fa-archive
+        href: https://www.github.com/martinctc/zipcodes
     - text: "Blog"
       icon: fa-rss
       href: https://martinctc.github.io/blog/  # CHANGE HERE OR DELETE ALL 3 LINES 

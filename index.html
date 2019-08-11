@@ -7,6 +7,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -255,18 +256,6 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
@@ -350,6 +339,13 @@ $(document).ready(function () {
         textworks
       </a>
     </li>
+    <li>
+      <a href="https://www.github.com/martinctc/zipcodes">
+        <span class="fa fa-archive"></span>
+         
+        zipcodes
+      </a>
+    </li>
   </ul>
 </li>
 <li>
@@ -400,7 +396,7 @@ $(document).ready(function () {
 <li>Automating workflows of ’knowledge workers’through programming - to reduce error, increase efficiency, and spend less time doing, more time thinking</li>
 </ul>
 <hr />
-<p>I’ve written four R packages, as an exercise to collate and organise the most useful functions that I’ve written for my analysis. At the time of writing these are only available on GitHub, but the intention is to release them on CRAN at some point. I love interacting with the R community, so you can occasionally spot me at the EARL Conference or the various R Meet-ups in London. Find out more about me <a href="https://martinctc.github.io/about">here</a>.</p>
+<p>I’ve written several R packages as an exercise to collate and organise the most useful functions that I’ve written for my analysis. At the time of writing these are only available on GitHub, but the intention is to release them on CRAN at some point. I love interacting with the R community, so you can occasionally spot me at the EARL Conference or the various R Meet-ups in London. Find out more about me <a href="https://martinctc.github.io/about">here</a>.</p>
 <p>To find out more about my work, check out my <a href="https://martinctc.github.io/portfolio">portfolio</a> and my <a href="https://martinctc.github.io/blog">blog</a>.</p>
 
 
@@ -420,6 +416,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

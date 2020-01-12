@@ -30,6 +30,9 @@ navbar:
       - text: "zipcodes"
         icon: fa-archive
         href: https://www.github.com/martinctc/zipcodes
+      - text: "modeltoolbox"
+        icon: fa-archive
+        href: https://www.github.com/martinctc/modeltoolbox
     - text: "Blog"
       icon: fa-rss
       href: https://martinctc.github.io/blog/  # CHANGE HERE OR DELETE ALL 3 LINES 

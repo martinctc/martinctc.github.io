@@ -11,7 +11,7 @@
 
 
 
-<title>About me</title>
+<title>about.utf8</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -79,6 +79,7 @@ h6 {
 }
 </style>
 
+<link rel="stylesheet" href="style.css" type="text/css" />
 
 
 
@@ -386,14 +387,45 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">About me</h1>
 
 </div>
 
 
-<hr />
-<div id="what-i-do" class="section level2">
-<h2>What I do</h2>
+<style>
+.parallax { 
+    /* The image used */
+    background-image: url("images/london-1405911_1920.jpg");
+
+    /* Set a specific height */
+    height: 400px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.myimg{
+    width: 10%;
+    color: red;
+    position: absolute;
+    top: 150px;
+    left: 45%;
+}
+</style>
+
+<!-- Container element -->
+<div class="parallax">    
+</div>
+
+
+
+
+
+<br><br><br>
+<div class="mycontent">
+<h2 id="what-i-do">What I do</h2>
 <p>I currently work as a strategy consultant at Rainmakers CSI, where our key business is to help our clients to solve strategic problems, enabling their business to grow profitably. The process of solving strategic problems often requires input from multiple areas, such as stakeholders, market/pricing data, surveys (e.g. usage &amp; attitude studies), as well as qualitative feedback from customers. Applying analytics in such context therefore involves bringing all these different strands together, and identifying patterns or answers through being hypothesis/objective-driven throughout. R, and its thousands of fantastic packages, is a great tool for this job. Some of the most common techniques that I apply in my work include:</p>
 <ul>
 <li>Segmentation - using clustering methods, or rule-based algorithms applied on survey data</li>
@@ -405,9 +437,7 @@ $(document).ready(function () {
 <p>I primarily work in R and Excel for data analysis, but I also use a survey analysis software called Q (part of DisplayR). In terms of production, I also use Excel and PowerPoint VBA to improve the quality of our outputs.</p>
 <p>Check out my <a href="https://www.linkedin.com/in/martin-chan-tc/">LinkedIn</a> to find out more.</p>
 <hr />
-</div>
-<div id="how-i-got-into-r" class="section level2">
-<h2>How I got into R</h2>
+<h2 id="how-i-got-into-r">How I got into R</h2>
 <p>Before I became a big fan of R, I learnt Excel VBA as a “first language” as I discovered the potential and power of automating repetitive processes with programming. I then came across R and everything that comes with it: a highly active and collaborative community, an incredible range of powerful packages, and the good analysis practice it encourages.</p>
 </div>
 

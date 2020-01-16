@@ -11,7 +11,7 @@
 
 
 
-<title>Martin Chan</title>
+<title>index.utf8</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -79,6 +79,7 @@ h6 {
 }
 </style>
 
+<link rel="stylesheet" href="style.css" type="text/css" />
 
 
 
@@ -386,11 +387,44 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Martin Chan</h1>
 
 </div>
 
 
+<style>
+.parallax { 
+    /* The image used */
+    background-image: url("images/london-1405911_1920.jpg");
+
+    /* Set a specific height */
+    height: 400px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.myimg{
+    width: 10%;
+    color: red;
+    position: absolute;
+    top: 150px;
+    left: 45%;
+}
+</style>
+
+<!-- Container element -->
+<div class="parallax">    
+</div>
+
+
+
+
+
+<br><br><br>
+<div class="mycontent">
 <div style="float:right; position:relative; width:200px; right: -40px;">
 <img src="cover.svg" alt="Hi there!" />
 </div>
@@ -404,6 +438,7 @@ $(document).ready(function () {
 <hr />
 <p>I’ve written several R packages as an exercise to collate and organise the most useful functions that I’ve written for my analysis. At the time of writing these are only available on GitHub, but the intention is to release them on CRAN at some point. I love interacting with the R community, so you can occasionally spot me at the EARL Conference or the various R Meet-ups in London. Find out more about me <a href="https://martinctc.github.io/about">here</a>.</p>
 <p>To find out more about my work, check out my <a href="https://martinctc.github.io/portfolio">portfolio</a> and my <a href="https://martinctc.github.io/blog">blog</a>.</p>
+</div>
 
 
 

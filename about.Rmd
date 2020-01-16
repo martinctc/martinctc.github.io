@@ -1,12 +1,18 @@
 ---
-title: "About me"
+title: ""
 output: 
   html_document:
+    css: style.css
     includes:
        in_header: GA_Script.html
 ---
 
----
+```{r, echo=FALSE}
+htmltools::includeHTML("parallax/london-header.html")
+```
+
+<br><br><br>
+<div class="mycontent">
 
 ## What I do
 
@@ -27,3 +33,5 @@ Check out my [LinkedIn](https://www.linkedin.com/in/martin-chan-tc/) to find out
 ## How I got into R
 
 Before I became a big fan of R, I learnt Excel VBA as a  "first language" as I discovered the potential and power of automating repetitive processes with programming. I then came across R and everything that comes with it: a highly active and collaborative community, an incredible range of powerful packages, and the good analysis practice it encourages. 
+
+</div>

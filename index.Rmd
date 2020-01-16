@@ -1,11 +1,18 @@
 ---
-title: "Martin Chan"
+title: ""
 output: 
   html_document:
+    css: style.css
     includes:
        in_header: GA_Script.html
 ---
 
+```{r, echo=FALSE}
+htmltools::includeHTML("parallax/london-header.html")
+```
+
+<br><br><br>
+<div class="mycontent">
 
 <div style="float:right; position:relative; width:200px; right: -40px;"> ![Hi there!](cover.svg) </div>
 
@@ -22,3 +29,6 @@ My interest is in identifying data science solutions (particularly, in R!) in or
 I've written several R packages as an exercise to collate and organise the most useful functions that I've written for my analysis. At the time of writing these are only available on GitHub, but the intention is to release them on CRAN at some point. I love interacting with the R community, so you can occasionally spot me at the EARL Conference or the various R Meet-ups in London. Find out more about me [here](https://martinctc.github.io/about).
 
 To find out more about my work, check out my [portfolio](https://martinctc.github.io/portfolio) and my [blog](https://martinctc.github.io/blog).
+
+</div>
+

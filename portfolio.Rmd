@@ -28,6 +28,18 @@ Most of these packages were to some extent "by-products" of the analysis that I'
 
 On this same site you can find my [blog](https://martinctc.github.io/blog), where I write about things related to #rstats and data science. I contribute my blogs to [r-bloggers](https://www.r-bloggers.com/) and [R Weekly](https://rweekly.org), which you can find as an example two of my blogs featured in the [2019 Week 17 update](https://rweekly.org/2019-17.html) on R Weekly. My post on the [state of R artefacts](https://martinctc.github.io/blog/a-short-essay-on-duplicated-r-artefacts/) is also selected as the highlight post of [2019 Week 27](https://rweekly.org/2019-27.html) on R Weekly.
 
+### Highlight posts
+
+- [RStudio Projects and Working Directories: A Beginner's Guide](https://martinctc.github.io/blog/rstudio-projects-and-working-directories-a-beginner%27s-guide/) - a starter guide on setting up effective, collaboration-friendly directories - a must read for beginners in R
+
+- [Using data.table with magrittr pipes: best of both worlds](https://martinctc.github.io/blog/using-data.table-with-magrittr-pipes-best-of-both-worlds/) - a post on combining the strengths of the wildly popular **tidyverse** and the blazing fast **data.table** packages
+
+<blockquote class="twitter-tweet" data-lang="en-gb"><p lang="en" dir="ltr">🗂 I&#39;m always intrigued by proj setups…<br>&quot;RStudio Projects and Working Directories: A Beginner&#39;s Guide&quot; 👨🏻
+💻 Martin Chan <a href="https://t.co/B8aDTsyhup">https://t.co/B8aDTsyhup</a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://t.co/rDyQxed3ey">pic.twitter.com/rDyQxed3ey</a></p>&mdash; Mara Averick (@dataandme) <a href="https://twitter.com/dataandme/status/1220346320667467776?ref_src=twsrc%5Etfw">23 January 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+- [LondonR: Hadley Wickham & tidyverse's greatest hits](https://martinctc.github.io/blog/londonr-hadley-wickham-and-tidyverse-greatest-hits/) - a post covering the highlights of Hadley Wickham's presentation at LondonR in August 2019.
+
 ---
 
 ## EARL Conference 2018

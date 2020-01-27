@@ -34,10 +34,6 @@ On this same site you can find my [blog](https://martinctc.github.io/blog), wher
 
 - [Using data.table with magrittr pipes: best of both worlds](https://martinctc.github.io/blog/using-data.table-with-magrittr-pipes-best-of-both-worlds/) - a post on combining the strengths of the wildly popular **tidyverse** and the blazing fast **data.table** packages
 
-<blockquote class="twitter-tweet" data-lang="en-gb"><p lang="en" dir="ltr">🗂 I&#39;m always intrigued by proj setups…<br>&quot;RStudio Projects and Working Directories: A Beginner&#39;s Guide&quot; 👨🏻
-💻 Martin Chan <a href="https://t.co/B8aDTsyhup">https://t.co/B8aDTsyhup</a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://t.co/rDyQxed3ey">pic.twitter.com/rDyQxed3ey</a></p>&mdash; Mara Averick (@dataandme) <a href="https://twitter.com/dataandme/status/1220346320667467776?ref_src=twsrc%5Etfw">23 January 2020</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 - [LondonR: Hadley Wickham & tidyverse's greatest hits](https://martinctc.github.io/blog/londonr-hadley-wickham-and-tidyverse-greatest-hits/) - a post covering the highlights of Hadley Wickham's presentation at LondonR in August 2019.
 
 ---

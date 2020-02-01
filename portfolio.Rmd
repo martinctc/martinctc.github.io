@@ -30,7 +30,7 @@ On this same site you can find my [blog](https://martinctc.github.io/blog), wher
 
 ### Highlight posts
 
-- [RStudio Projects and Working Directories: A Beginner's Guide](https://martinctc.github.io/blog/rstudio-projects-and-working-directories-a-beginner%27s-guide/) - a starter guide on setting up effective, collaboration-friendly directories - a must read for beginners in R
+- [RStudio Projects and Working Directories: A Beginner's Guide](https://martinctc.github.io/blog/rstudio-projects-and-working-directories-a-beginner%27s-guide/) - a starter guide on setting up effective, collaboration-friendly directories - a must read for beginners in R. Special thanks to Chu Kyoyoung for translating this post into [Korean](https://chukycheese.github.io/data%20science/rstudio-project-and-working-directories/).
 
 - [Using data.table with magrittr pipes: best of both worlds](https://martinctc.github.io/blog/using-data.table-with-magrittr-pipes-best-of-both-worlds/) - a post on combining the strengths of the wildly popular **tidyverse** and the blazing fast **data.table** packages
 

@@ -16,13 +16,13 @@ htmltools::includeHTML("parallax/london-header.html")
 
 <div style="float:right; position:relative; width:200px; right: -40px;"> ![Hi there!](cover.svg) </div>
 
-I'm Martin Chan, Consultant at Rainmakers CSI. I am part of a team based in London where we help our clients solve strategic problems and grow their businesses profitably. Examples of what we do include opportunity sizing, customer segmentation and trend identification, but the problems we work with tend to be open-ended and therefore no solution is ever off-the-shelf. 
-
-My interest is in identifying data science solutions (particularly, in R!) in order to make these decision-making processes more well-informed and rigorous. I'm also interested in particular topics such as:
+I'm Martin Chan, a consultant with a background in strategy, data science, and market research. My interest is in identifying data science solutions (particularly, in R!) in order to make these decision-making processes more well-informed and rigorous. I'm also interested in particular topics such as:
 
 - Statistics and epistemology - how do we *know*?
 - Text mining and natural language processing
 - Automating workflows of 'knowledge workers'through programming - to reduce error, increase efficiency, and spend less time doing, more time thinking
+
+Previously, I worked as a Consultant at Rainmakers CSI where I was part of a team based in London where we help our clients solve strategic problems and grow their businesses profitably. Examples of what we do include opportunity sizing, customer segmentation and trend identification, but the problems we work with tend to be open-ended and therefore no solution is ever off-the-shelf. 
 
 ---
 

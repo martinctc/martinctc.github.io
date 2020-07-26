@@ -16,7 +16,8 @@ htmltools::includeHTML("parallax/london-header.html")
 
 ## What I do
 
-I currently work as a strategy consultant at Rainmakers CSI, where our key business is to help our clients to solve strategic problems, enabling their business to grow profitably. The process of solving strategic problems often requires input from multiple areas, such as stakeholders, market/pricing data, surveys (e.g. usage & attitude studies), as well as qualitative feedback from customers. Applying analytics in such context therefore involves bringing all these different strands together, and identifying  patterns or answers through being hypothesis/objective-driven throughout. R, and its thousands of fantastic packages, is a great tool for this job. Some of the most common techniques that I apply in my work include:
+
+My previous role was strategy consultant at Rainmakers CSI, where our key business is to help our clients to solve strategic problems, enabling their business to grow profitably. The process of solving strategic problems often requires input from multiple areas, such as stakeholders, market/pricing data, surveys (e.g. usage & attitude studies), as well as qualitative feedback from customers. Applying analytics in such context therefore involves bringing all these different strands together, and identifying  patterns or answers through being hypothesis/objective-driven throughout. R, and its thousands of fantastic packages, is a great tool for this job. Some of the most common techniques that I apply in my work include:
 
 * Segmentation - using clustering methods, or rule-based algorithms applied on survey data
 * Text mining - identifying patterns or business hypotheses from large volumes of unstructured textual information

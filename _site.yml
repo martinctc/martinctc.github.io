@@ -17,13 +17,13 @@ navbar:
       menu:
       - text: "surveytoolbox"
         icon: fa-archive
-        href: https://www.github.com/martinctc/surveytoolbox
+        href: https://martinctc.github.io/surveytoolbox
       - text: "tstoolbox"
         icon: fa-archive
         href: https://www.github.com/martinctc/tstoolbox
       - text: "rwa"
         icon: fa-archive
-        href: https://www.github.com/martinctc/rwa
+        href: https://martinctc.github.io/rwa
       - text: "textworks"
         icon: fa-archive
         href: https://www.github.com/martinctc/textworks
@@ -33,6 +33,12 @@ navbar:
       - text: "modeltoolbox"
         icon: fa-archive
         href: https://www.github.com/martinctc/modeltoolbox
+      - text: "hkdatasets"
+        icon: fa-archive
+        href: https://hong-kong-districts-info.github.io/hkdatasets/
+      - text: "parallaxr"
+        icon: fa-archive
+        href: https://martinctc.github.io/parallaxr
     - text: "Blog"
       icon: fa-rss
       href: https://martinctc.github.io/blog/  # CHANGE HERE OR DELETE ALL 3 LINES 

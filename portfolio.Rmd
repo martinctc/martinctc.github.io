@@ -19,8 +19,17 @@ I've authored several R packages, which are all available on [GitHub](https://ww
 * [textworks](https://www.github.com/martinctc/textworks)
 * [zipcodes](https://www.github.com/martinctc/zipcodes)
 * [modeltoolbox](https://www.github.com/martinctc/modeltoolbox)
+* [gpxtoolbox](https://www.github.com/martinctc/gpxtoolbox)
 
-Most of these packages were to some extent "by-products" of the analysis that I've been doing for the last couple of years, which I decided would have greater value developed into packages. If you have any comments or questions about these packages, please get in touch - any feedback would be valuable!
+Most of these packages were to some extent "by-products" of the analysis that I've been doing for the last couple of years, which I decided would have greater value developed into packages. 
+
+In addition, I maintain the following packages as part of my work with Microsoft Viva Insights: 
+
+* [vivainsights - R](https://microsoft.github.io/vivainsights/)
+* [vivainsights - Python](https://microsoft.github.io/vivainsights-py/)
+* [wpa](https://microsoft.github.io/wpa/)
+
+If you have any comments or questions about these packages, please get in touch - any feedback would be valuable!
 
 ---
 

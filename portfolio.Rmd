@@ -46,14 +46,9 @@ real-world need of mine.
 
 _A browser-based DJ tool for tagging and organising tracks._
 
-</div>
-<br><br>
-
-```{r, echo=FALSE}
-htmltools::includeHTML("parallax/track-tag-manager-header.html")
-```
-
-<div class="mycontent"><br><br>
+<a href="https://martinctc.github.io/track-tag-manager/" target="_blank" rel="noopener">
+<img src="images/track-tag-manager.png" alt="Track Tag Manager screenshot" style="display:block; max-width:100%; width:700px; margin:1.5em auto; border-radius:6px; box-shadow:0 4px 12px rgba(0,0,0,0.4);" />
+</a>
 
 [Track Tag Manager](https://martinctc.github.io/track-tag-manager/) is a
 lightweight web app I built to help manage track metadata as part of a DJ
@@ -68,14 +63,9 @@ so there's nothing to install.
 
 _An AI-powered triathlon coaching app._
 
-</div>
-<br><br>
-
-```{r, echo=FALSE}
-htmltools::includeHTML("parallax/tri-harder-app-header.html")
-```
-
-<div class="mycontent"><br><br>
+<a href="https://martinctc.github.io/tri-harder-app/" target="_blank" rel="noopener">
+<img src="images/tri-harder-app.jpeg" alt="Tri Harder screenshot" style="display:block; max-width:100%; width:700px; margin:1.5em auto; border-radius:6px; box-shadow:0 4px 12px rgba(0,0,0,0.4);" />
+</a>
 
 [Tri Harder](https://martinctc.github.io/tri-harder-app/) is a browser-based
 triathlon coaching app that uses AI to help athletes plan and adapt their

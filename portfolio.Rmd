@@ -1,5 +1,6 @@
 ---
 title: ""
+pagetitle: "Portfolio - Martin Chan"
 output: 
   html_document:
     css: style.css
@@ -30,6 +31,60 @@ In addition, I maintain the following packages as part of my work with Microsoft
 * [wpa](https://microsoft.github.io/wpa/)
 
 If you have any comments or questions about these packages, please get in touch - any feedback would be valuable!
+
+---
+
+## Vibe-coded projects
+
+Alongside R packages, I've recently been building small web apps and tools
+through "vibe coding" — quick, exploratory builds where I use AI-assisted
+development to turn an idea into a working tool as directly as possible.
+These are typically self-contained, browser-based, and built for a specific
+real-world need of mine.
+
+### Track Tag Manager
+
+_A browser-based DJ tool for tagging and organising tracks._
+
+</div>
+<br><br>
+
+```{r, echo=FALSE}
+htmltools::includeHTML("parallax/track-tag-manager-header.html")
+```
+
+<div class="mycontent"><br><br>
+
+[Track Tag Manager](https://martinctc.github.io/track-tag-manager/) is a
+lightweight web app I built to help manage track metadata as part of a DJ
+workflow — making it easier to tag, filter, and curate tracks without being
+locked into a single piece of DJ software. It runs entirely in the browser,
+so there's nothing to install.
+
+- Live app: <https://martinctc.github.io/track-tag-manager/>
+- Source code: <https://github.com/martinctc/track-tag-manager>
+
+### Tri Harder
+
+_An AI-powered triathlon coaching app._
+
+</div>
+<br><br>
+
+```{r, echo=FALSE}
+htmltools::includeHTML("parallax/tri-harder-app-header.html")
+```
+
+<div class="mycontent"><br><br>
+
+[Tri Harder](https://martinctc.github.io/tri-harder-app/) is a browser-based
+triathlon coaching app that uses AI to help athletes plan and adapt their
+training across swim, bike, and run. It's designed to make structured,
+personalised coaching accessible without needing a paid platform — runs
+entirely in the browser, no install required.
+
+- Live app: <https://martinctc.github.io/tri-harder-app/>
+- Source code: <https://github.com/martinctc/tri-harder-app>
 
 ---
 

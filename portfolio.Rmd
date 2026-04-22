@@ -44,20 +44,22 @@ real-world need of mine.
 
 ### Track Tag Manager
 
-_A browser-based DJ tool for tagging and organising tracks._
+_A local Python app for tagging and organising tracks, designed for DJ workflows._
 
 <a href="https://martinctc.github.io/track-tag-manager/" target="_blank" rel="noopener">
 <img src="images/track-tag-manager.png" alt="Track Tag Manager screenshot" style="display:block; max-width:100%; width:700px; margin:1.5em auto; border-radius:6px; box-shadow:0 4px 12px rgba(0,0,0,0.4);" />
 </a>
 
 [Track Tag Manager](https://martinctc.github.io/track-tag-manager/) is a
-lightweight web app I built to help manage track metadata as part of a DJ
+Python desktop app I built to help manage track metadata as part of a DJ
 workflow — making it easier to tag, filter, and curate tracks without being
-locked into a single piece of DJ software. It runs entirely in the browser,
-so there's nothing to install.
+locked into a single piece of DJ software. It runs locally and offline, so
+your library never leaves your machine.
 
-- Live app: <https://martinctc.github.io/track-tag-manager/>
+- Project page: <https://martinctc.github.io/track-tag-manager/>
 - Source code: <https://github.com/martinctc/track-tag-manager>
+
+---
 
 ### Tri Harder
 

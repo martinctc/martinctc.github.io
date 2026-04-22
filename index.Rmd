@@ -1,5 +1,6 @@
 ---
 title: ""
+pagetitle: "Home - Martin Chan"
 output: 
   html_document:
     css: style.css

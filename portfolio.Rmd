@@ -80,6 +80,49 @@ entirely in the browser, no install required.
 
 ---
 
+### Wrava
+
+_A local-first writing app that tracks and analyses your writing activity._
+
+<a href="https://martinctc.github.io/wrava/" target="_blank" rel="noopener">
+<img src="images/wrava.png" alt="Wrava screenshot" style="display:block; max-width:100%; width:700px; margin:1.5em auto; border-radius:6px; box-shadow:0 4px 12px rgba(0,0,0,0.4);" />
+</a>
+
+[Wrava](https://martinctc.github.io/wrava/) turns a folder of ordinary
+Markdown files into a writing practice you can see. Every accepted change is
+measured as words added, words deleted, and net document growth, so a
+distraction-light editor doubles as an activity tracker. The analytics view
+turns those raw edits into a 12-week trend, a consistency heatmap, and
+per-document and per-tag breakdowns. It is open source, and everything stays
+on your own machine.
+
+- Project page: <https://martinctc.github.io/wrava/>
+- Source code: <https://github.com/martinctc/wrava>
+
+---
+
+### Dominium
+
+_A turn-based strategy game for 2 to 4 players, playable in the browser._
+
+<a href="https://martinctc.github.io/dominium/" target="_blank" rel="noopener">
+<img src="images/dominium.png" alt="Dominium screenshot" style="display:block; max-width:100%; width:700px; margin:1.5em auto; border-radius:6px; box-shadow:0 4px 12px rgba(0,0,0,0.4);" />
+</a>
+
+[Dominium](https://martinctc.github.io/dominium/) is a grid-based strategy
+game descended from a pen-and-paper game I played at school. Each player
+defends a base, gathers food, wood and stone, and builds an army to destroy
+every other base on the board. Turns run in three phases of income, build,
+and act, with six unit types, builder structures, fog of war, and terrain
+that shapes where you can move and build. You can play hot-seat with friends
+or against AI opponents, and there is an experimental isometric view
+alongside the classic pixel art.
+
+- Play it now: <https://martinctc.github.io/dominium/>
+- Source code: <https://github.com/martinctc/dominium>
+
+---
+
 ## Blogs
 
 On this same site you can find my [blog](https://martinctc.github.io/blog), where I write about things related to #rstats and data science. I contribute my blogs to [r-bloggers](https://www.r-bloggers.com/), [R Craft](https://www.r-craft.org/), and [R Weekly](https://rweekly.org), which you can find as an example two of my blogs featured in the [2019 Week 17 update](https://rweekly.org/2019-17.html) on R Weekly. My post on the [state of R artefacts](https://martinctc.github.io/blog/a-short-essay-on-duplicated-r-artefacts/) is also selected as the highlight post of [2019 Week 27](https://rweekly.org/2019-27.html) on R Weekly.

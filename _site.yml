@@ -13,6 +13,9 @@ navbar:
     - text: "Portfolio"
       icon: fa-file-pdf-o
       href: portfolio.html
+    - text: "Projects"
+      icon: fa-rocket
+      href: projects.html
     - text: "Packages"
       menu:
       - text: "surveytoolbox"

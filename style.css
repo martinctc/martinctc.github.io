@@ -56,10 +56,22 @@ a {
 /* ===== Portfolio project rows ("Netflix"-style browser) =====
    All rules are .pf- prefixed so index/about are unaffected. */
 
+/* Card rows share the 900px prose measure so text and cards sit on one
+   vertical grid. The row scrolls horizontally inside that measure, so the
+   left edge of the first card always aligns with the start of the prose
+   above it, whatever the viewport. */
 .pf-rowblock {
-  max-width: 1160px;
-  margin: 0 auto;
+  max-width: 900px;
+  margin: 26px auto 30px;
   padding: 0 15px;
+}
+
+/* Prose that follows a row needs the same breathing room, otherwise the
+   paragraph sits hard against the cards and the section boundary reads as
+   accidental rather than deliberate. */
+.pf-rowblock + .pf-rowblock,
+.pf-rowblock + .mycontent {
+  margin-top: 26px;
 }
 
 .pf-rowwrap { position: relative; }
@@ -188,11 +200,23 @@ a {
 .pf-rowwrap:focus-within .pf-arrow { opacity: 1; }
 .pf-arrow:hover { background: rgba(0,0,0,.92); }
 .pf-arrow[disabled] { opacity: 0 !important; pointer-events: none; }
-.pf-arrow--l { left: -10px; }
-.pf-arrow--r { right: -10px; }
+.pf-arrow--l { left: 6px; }
+.pf-arrow--r { right: 6px; }
 .pf-arrow:focus-visible { outline: 2px solid #00bc8c; }
 
-/* Cards linking to write-ups further down this page */
+/* Project screenshots on the write-ups page. width/height attributes on the
+   img reserve the box so lazy-loading doesn't shift the text; CSS scales them
+   to the shared 900px content measure. */
+.pf-shot {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 1.4em auto 1.2em;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.4);
+}
+
+/* Cards linking to the write-ups page */
 .section.level3 { scroll-margin-top: 70px; }
 .section.level3:target > h3 { color: #00bc8c; }
 .pf-back { margin: 6px 0 0; }
@@ -207,6 +231,28 @@ a {
   .pf-cardtitle { font-size: 14px; }
   .pf-oneliner { font-size: 12px; }
 }
+/* YouTube interview embed: a fluid 16:9 frame that tracks the prose
+   measure, replacing the old fixed 560px iframe that overflowed small
+   screens and rendered as a dead grey box on some loads. */
+.pf-video {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto 10px;
+  background: #000;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,.45);
+}
+.pf-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .pf-card, .pf-arrow { transition: none; }
   .pf-card:hover { transform: none; }

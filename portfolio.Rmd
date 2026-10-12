@@ -122,19 +122,19 @@ real-world need of mine.
 <div class="pf-rowblock">
 <div class="pf-rowwrap">
 <div class="pf-row">
-<a class="pf-card" href="#track-tag-manager">
+<a class="pf-card" href="projects.html#track-tag-manager">
 <div class="pf-thumb"><span class="pf-badge">Python</span><img src="images/projects/track-tag-manager.jpg" alt="Track Tag Manager screenshot" loading="lazy" width="800" height="508"><span class="pf-cardtitle">Track Tag Manager</span></div>
 <div class="pf-cap"><div class="pf-oneliner">A local Python app for tagging and organising tracks, designed for DJ workflows.</div></div>
 </a>
-<a class="pf-card" href="#tri-harder">
+<a class="pf-card" href="projects.html#tri-harder">
 <div class="pf-thumb"><span class="pf-badge">TypeScript</span><img src="images/projects/tri-harder-app.jpg" alt="Tri Harder screenshot" loading="lazy" width="800" height="482"><span class="pf-cardtitle">Tri Harder</span></div>
 <div class="pf-cap"><div class="pf-oneliner">An AI-powered triathlon coaching app.</div></div>
 </a>
-<a class="pf-card" href="#wrava">
+<a class="pf-card" href="projects.html#wrava">
 <div class="pf-thumb"><span class="pf-badge">TypeScript</span><img src="images/projects/wrava.jpg" alt="Wrava screenshot" loading="lazy" width="800" height="469"><span class="pf-cardtitle">Wrava</span></div>
 <div class="pf-cap"><div class="pf-oneliner">A local-first writing app that tracks and analyses your writing activity.</div></div>
 </a>
-<a class="pf-card" href="#dominium">
+<a class="pf-card" href="projects.html#dominium">
 <div class="pf-thumb"><span class="pf-badge">TypeScript</span><img src="images/projects/dominium.jpg" alt="Dominium screenshot" loading="lazy" width="800" height="469"><span class="pf-cardtitle">Dominium</span></div>
 <div class="pf-cap"><div class="pf-oneliner">A turn-based strategy game for 2 to 4 players, playable in the browser.</div></div>
 </a>
@@ -162,92 +162,8 @@ real-world need of mine.
 
 <div class="mycontent">
 
-### Track Tag Manager
-
-<p class="pf-back"><a href="#">&uarr; Back to projects</a></p>
-
-_A local Python app for tagging and organising tracks, designed for DJ workflows._
-
-<a href="https://martinctc.github.io/track-tag-manager/" target="_blank" rel="noopener">
-<img src="images/track-tag-manager.png" alt="Track Tag Manager screenshot" style="display:block; max-width:100%; width:700px; margin:1.5em auto; border-radius:6px; box-shadow:0 4px 12px rgba(0,0,0,0.4);" />
-</a>
-
-[Track Tag Manager](https://martinctc.github.io/track-tag-manager/) is a
-Python desktop app I built to help manage track metadata as part of a DJ
-workflow — making it easier to tag, filter, and curate tracks without being
-locked into a single piece of DJ software. It runs locally and offline, so
-your library never leaves your machine.
-
-- Project page: <https://martinctc.github.io/track-tag-manager/>
-- Source code: <https://github.com/martinctc/track-tag-manager>
-
----
-
-### Tri Harder
-
-<p class="pf-back"><a href="#">&uarr; Back to projects</a></p>
-
-_An AI-powered triathlon coaching app._
-
-<a href="https://martinctc.github.io/tri-harder-app/" target="_blank" rel="noopener">
-<img src="images/tri-harder-app.jpeg" alt="Tri Harder screenshot" style="display:block; max-width:100%; width:700px; margin:1.5em auto; border-radius:6px; box-shadow:0 4px 12px rgba(0,0,0,0.4);" />
-</a>
-
-[Tri Harder](https://martinctc.github.io/tri-harder-app/) is a browser-based
-triathlon coaching app that uses AI to help athletes plan and adapt their
-training across swim, bike, and run. It's designed to make structured,
-personalised coaching accessible without needing a paid platform — runs
-entirely in the browser, no install required.
-
-- Live app: <https://martinctc.github.io/tri-harder-app/>
-- Source code: <https://github.com/martinctc/tri-harder-app>
-
----
-
-### Wrava
-
-<p class="pf-back"><a href="#">&uarr; Back to projects</a></p>
-
-_A local-first writing app that tracks and analyses your writing activity._
-
-<a href="https://martinctc.github.io/wrava/" target="_blank" rel="noopener">
-<img src="images/wrava.png" alt="Wrava screenshot" style="display:block; max-width:100%; width:700px; margin:1.5em auto; border-radius:6px; box-shadow:0 4px 12px rgba(0,0,0,0.4);" />
-</a>
-
-[Wrava](https://martinctc.github.io/wrava/) turns a folder of ordinary
-Markdown files into a writing practice you can see. Every accepted change is
-measured as words added, words deleted, and net document growth, so a
-distraction-light editor doubles as an activity tracker. The analytics view
-turns those raw edits into a 12-week trend, a consistency heatmap, and
-per-document and per-tag breakdowns. It is open source, and everything stays
-on your own machine.
-
-- Project page: <https://martinctc.github.io/wrava/>
-- Source code: <https://github.com/martinctc/wrava>
-
----
-
-### Dominium
-
-<p class="pf-back"><a href="#">&uarr; Back to projects</a></p>
-
-_A turn-based strategy game for 2 to 4 players, playable in the browser._
-
-<a href="https://martinctc.github.io/dominium/" target="_blank" rel="noopener">
-<img src="images/dominium.png" alt="Dominium screenshot" style="display:block; max-width:100%; width:700px; margin:1.5em auto; border-radius:6px; box-shadow:0 4px 12px rgba(0,0,0,0.4);" />
-</a>
-
-[Dominium](https://martinctc.github.io/dominium/) is a grid-based strategy
-game descended from a pen-and-paper game I played at school. Each player
-defends a base, gathers food, wood and stone, and builds an army to destroy
-every other base on the board. Turns run in three phases of income, build,
-and act, with six unit types, builder structures, fog of war, and terrain
-that shapes where you can move and build. You can play hot-seat with friends
-or against AI opponents, and there is an experimental isometric view
-alongside the classic pixel art.
-
-- Play it now: <https://martinctc.github.io/dominium/>
-- Source code: <https://github.com/martinctc/dominium>
+For a closer look at each of these projects, I've written up the ideas and
+thinking behind them on the [vibe-coded projects page](projects.html).
 
 ---
 
@@ -307,7 +223,9 @@ htmltools::includeHTML("parallax/interview-header.html")
 [Jonathan Ng](https://datastrategywithjonathan.com/) is a best-selling instructor and Data Scientist who interviewed me on how I use R in a market research and consulting environment, and my personal journey from Excel to R. Check out the full interview here:
 
 <br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/o9wHpvIYBDM" frameborder="0" allowfullscreen></iframe>
+<div class="pf-video">
+<iframe src="https://www.youtube-nocookie.com/embed/o9wHpvIYBDM" title="Philosopher to Data Analyst / Strategy Consultant - interview with Jonathan Ng" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 </div>
 

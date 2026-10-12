@@ -15,3 +15,17 @@ rmarkdown::render_site(encoding = "UTF-8")
 This step renders RMarkdown files into static HTML files to be used. 
 
 Edit `_site.yml` to control for site parameters, like the theme and the navigation bar. 
+
+To preview locally, serve the folder over HTTP rather than opening the HTML file directly:
+
+```
+python -m http.server 8000
+```
+
+then browse to http://localhost:8000/portfolio.html. Opening the file over `file://` works
+for layout, but YouTube embeds show "Error 153" because that request carries no `Referer`.
+
+Note that the rendered `.html` files are committed to this repository, so any change to an
+`.Rmd` file must be re-rendered and the output committed for it to appear on the live site.
+
+`AGENTS.md` records the known gotchas when editing these pages. 

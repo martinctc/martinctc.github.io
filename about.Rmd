@@ -17,23 +17,29 @@ htmltools::includeHTML("parallax/london-header.html")
 
 ## What I do
 
+I'm a Senior Data Scientist at Microsoft working on Viva Insights and Copilot Analytics. My role combines hands-on analytics development with customer-facing advisory work, helping large organizations understand how work gets done and how AI is changing workplace behavior.
 
-My previous role was strategy consultant at Rainmakers CSI, where our key business is to help our clients to solve strategic problems, enabling their business to grow profitably. The process of solving strategic problems often requires input from multiple areas, such as stakeholders, market/pricing data, surveys (e.g. usage & attitude studies), as well as qualitative feedback from customers. Applying analytics in such context therefore involves bringing all these different strands together, and identifying  patterns or answers through being hypothesis/objective-driven throughout. R, and its thousands of fantastic packages, is a great tool for this job. Some of the most common techniques that I apply in my work include:
+A lot of my recent work focuses on:
 
-* Segmentation - using clustering methods, or rule-based algorithms applied on survey data
-* Text mining - identifying patterns or business hypotheses from large volumes of unstructured textual information
-* Time series analysis
-* Relative Importance Analysis - modelling the importance contributions of inputs
-* Importance-Performance Analysis
+* Employee wellbeing and collaboration effectiveness
+* AI adoption and Copilot ROI analysis
+* Applied analytics for enterprise decision-making
+* Reproducible data science workflows in R and Python
 
-I primarily work in R and Excel for data analysis, but I also use a survey analysis software called Q (part of DisplayR). In terms of production, I also use Excel and PowerPoint VBA to improve the quality of our outputs.
+I also author and maintain open-source tools for practitioners working with workplace analytics data:
 
-Check out my [LinkedIn](https://www.linkedin.com/in/martin-chan-tc/) to find out more.
+* [{vivainsights} (R)](https://microsoft.github.io/vivainsights/) ([CRAN](https://cran.r-project.org/package=vivainsights))
+* [vivainsights (Python)](https://microsoft.github.io/vivainsights-py/) ([PyPI](https://pypi.org/project/vivainsights/))
+* [Viva Insights Sample Code](https://microsoft.github.io/viva-insights-sample-code/)
+
+Before Microsoft, I worked in strategy consulting at Rainmakers CSI, where I supported clients on open-ended strategic questions using a mix of quantitative and qualitative research. That background still shapes how I approach analytics today: hypothesis-driven, practical, and decision-focused.
+
+Check out my [LinkedIn](https://www.linkedin.com/in/martin-chan-tc/) for a fuller professional profile.
 
 ---
 
 ## How I got into R
 
-Before I became a big fan of R, I learnt Excel VBA as a  "first language" as I discovered the potential and power of automating repetitive processes with programming. I then came across R and everything that comes with it: a highly active and collaborative community, an incredible range of powerful packages, and the good analysis practice it encourages. 
+Before I became a heavy R user, I learned Excel VBA as a "first language" and quickly saw how much better work gets when repetitive processes are automated well. I later moved into R for its analytical depth, open-source ecosystem, and strong community norms around reproducibility and collaboration.
 
 </div>

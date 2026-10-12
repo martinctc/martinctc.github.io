@@ -30,6 +30,10 @@
     row.addEventListener('scroll', update, { passive: true });
     window.addEventListener('resize', update);
     update();
+
+    // Only reveal the arrows now that the handlers are attached, so a
+    // no-JS visitor never focuses an inert control.
+    wrap.classList.add('pf-enhanced');
   });
 })();
 </script>

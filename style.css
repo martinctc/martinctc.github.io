@@ -196,8 +196,12 @@ a {
   opacity: 0;
   transition: opacity .15s ease;
 }
-.pf-rowwrap:hover .pf-arrow,
-.pf-rowwrap:focus-within .pf-arrow { opacity: 1; }
+/* Arrow buttons are server-rendered but only become visible once portfolio.js
+   has attached listeners and adds .pf-enhanced. Without JS they stay hidden,
+   so nobody tabs to a control that cannot do anything; the row still scrolls
+   natively via overflow-x. */
+.pf-rowwrap.pf-enhanced:hover .pf-arrow,
+.pf-rowwrap.pf-enhanced:focus-within .pf-arrow { opacity: 1; }
 .pf-arrow:hover { background: rgba(0,0,0,.92); }
 .pf-arrow[disabled] { opacity: 0 !important; pointer-events: none; }
 .pf-arrow--l { left: 6px; }

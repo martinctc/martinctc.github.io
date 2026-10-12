@@ -21,6 +21,7 @@ I've authored several R packages, which are all available on [GitHub](https://ww
 
 </div>
 
+```{=html}
 <div class="pf-rowblock">
 <div class="pf-rowwrap">
 <div class="pf-row">
@@ -66,12 +67,12 @@ I've authored several R packages, which are all available on [GitHub](https://ww
 </a>
 <a class="pf-card" href="https://hong-kong-districts-info.github.io/hkdatasets/" target="_blank" rel="noopener">
 <div class="pf-thumb"><span class="pf-badge">R</span><img src="images/projects/hkdatasets.jpg" alt="hkdatasets package site" loading="lazy" width="1280" height="720"><span class="pf-cardtitle">hkdatasets</span></div>
-<div class="pf-cap"><div class="pf-oneliner">An R data package containing datasets related to Hong Kong.</div></div>
-</a>
+<div class="pf-cap"><div class="pf-oneliner">An R data package containing datasets related to Hong Kong.</div></div></a>
 </div>
 <button type="button" class="pf-arrow pf-arrow--l" aria-label="Scroll R packages left">&#8249;</button>
 <button type="button" class="pf-arrow pf-arrow--r" aria-label="Scroll R packages right">&#8250;</button>
 </div>
+```
 </div>
 
 <div class="mycontent">
@@ -82,6 +83,7 @@ In addition, I maintain the following packages as part of my work with Microsoft
 
 </div>
 
+```{=html}
 <div class="pf-rowblock">
 <div class="pf-rowwrap">
 <div class="pf-row">
@@ -95,8 +97,7 @@ In addition, I maintain the following packages as part of my work with Microsoft
 </a>
 <a class="pf-card" href="https://microsoft.github.io/wpa/" target="_blank" rel="noopener">
 <div class="pf-thumb"><span class="pf-badge">R</span><img src="images/projects/wpa.jpg" alt="wpa package site" loading="lazy" width="1280" height="720"><span class="pf-cardtitle">wpa</span></div>
-<div class="pf-cap"><div class="pf-oneliner">Analyze and visualize Microsoft Workplace Analytics data in R.</div></div>
-</a>
+<div class="pf-cap"><div class="pf-oneliner">Analyze and visualize Microsoft Workplace Analytics data in R.</div></div></a>
 </div>
 <button type="button" class="pf-arrow pf-arrow--l" aria-label="Scroll work packages left">&#8249;</button>
 <button type="button" class="pf-arrow pf-arrow--r" aria-label="Scroll work packages right">&#8250;</button>
@@ -107,6 +108,7 @@ In addition, I maintain the following packages as part of my work with Microsoft
 
 If you have any comments or questions about these packages, please get in touch - any feedback would be valuable!
 
+```
 ---
 
 ## Vibe-coded projects
@@ -119,6 +121,7 @@ real-world need of mine.
 
 </div>
 
+```{=html}
 <div class="pf-rowblock">
 <div class="pf-rowwrap">
 <div class="pf-row">
@@ -152,13 +155,13 @@ real-world need of mine.
 </a>
 <a class="pf-card" href="https://github.com/martinctc/ds-quiz" target="_blank" rel="noopener">
 <div class="pf-thumb pf-thumb--css pf-css-quiz"><span class="pf-badge">JS</span><span class="pf-glyph">&#128221;</span><span class="pf-cardtitle">ds-quiz</span></div>
-<div class="pf-cap"><div class="pf-oneliner">A single-page assessment tool for data science knowledge.</div></div>
-</a>
+<div class="pf-cap"><div class="pf-oneliner">A single-page assessment tool for data science knowledge.</div></div></a>
 </div>
 <button type="button" class="pf-arrow pf-arrow--l" aria-label="Scroll apps left">&#8249;</button>
 <button type="button" class="pf-arrow pf-arrow--r" aria-label="Scroll apps right">&#8250;</button>
 </div>
 </div>
+```
 
 <div class="mycontent">
 

@@ -41,7 +41,7 @@ navbar:
         href: https://martinctc.github.io/parallaxr
       - text: "gpxtoolbox"
         icon: fa-archive
-        href: https://microsoft.github.io/gpxtoolbox/
+        href: https://martinctc.github.io/gpxtoolbox/
     - text: "Blog"
       icon: fa-rss
       href: https://martinctc.github.io/blog/  # CHANGE HERE OR DELETE ALL 3 LINES 

@@ -1,3 +1,4 @@
+<script>
 /* Portfolio project rows: arrow-button enhancement for the CSS scroll-snap rows.
    Written as a progressive enhancement - rows scroll natively without this. */
 (function () {
@@ -31,3 +32,4 @@
     update();
   });
 })();
+</script>

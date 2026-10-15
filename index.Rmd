@@ -1,11 +1,12 @@
 ---
 title: ""
 pagetitle: "Home - Martin Chan"
+lang: en
 output: 
   html_document:
     css: style.css
     includes:
-       in_header: GA_Script.html
+       in_header: [GA_Script.html, head_extras.html, head-home.html]
 ---
 
 ```{r, echo=FALSE}
@@ -15,7 +16,7 @@ htmltools::includeHTML("parallax/london-header.html")
 <br><br><br>
 <div class="mycontent">
 
-<div style="float:right; position:relative; width:200px; right: -40px;"> ![Hi there!](cover.svg) </div>
+<div style="float:right; position:relative; width:200px; right: -40px;"> ![](cover.svg) </div>
 
 I'm Martin Chan, a consultant with a background in strategy, data science, and market research. My interest is in identifying data science solutions (particularly, in R!) in order to make these decision-making processes more well-informed and rigorous. I'm also interested in particular topics such as:
 

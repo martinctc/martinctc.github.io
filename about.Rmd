@@ -1,11 +1,12 @@
 ---
 title: ""
 pagetitle: "About - Martin Chan"
+lang: en
 output: 
   html_document:
     css: style.css
     includes:
-       in_header: GA_Script.html
+       in_header: [GA_Script.html, head_extras.html, head-about.html]
 ---
 
 ```{r, echo=FALSE}

@@ -23,7 +23,10 @@ These are all real bugs hit during the portfolio work. Check them before debuggi
 **Never render a single page with `rmarkdown::render('page.Rmd')`.** `render_site()` forces
 `self_contained: FALSE`, but a bare single-page render defaults to `TRUE` and base64-inlines
 every image, stylesheet and webfont into the HTML. One `render('portfolio.Rmd')` took the
-page from 29 KB to 9.7 MB. Always render the whole site.
+page from 29 KB to 9.7 MB. It also rewrites a remote `<iframe src=...>` into a
+`data:text/html` URI (verified with pandoc 3.12.1) — browsers refuse to run that, so the
+YouTube embed becomes a plain black box with no error. This is exactly what happened to the
+live portfolio page. Always render the whole site.
 
 **`after_body:` does not add `<script>` tags.** It inlines the file verbatim, so
 `portfolio.js` must contain its own `<script>`/`</script>`. Without them the JS renders
@@ -74,7 +77,9 @@ the edit tools, and when a file has CRLF endings, match `\r\n` explicitly in rep
 HTTP `Referer`, which is exactly what happens on `file://`. It works fine over `http://`
 and on the deployed site. Don't chase it as a site bug — the embed already carries
 `referrerpolicy="strict-origin-when-cross-origin"`. GitHub Pages sends no restrictive
-`Referrer-Policy`, so no extra header is needed.
+`Referrer-Policy`, so no extra header is needed. If the embed is blank on the *deployed* site
+too, look for a `data:text/html` iframe (a self-contained render inlined it) before blaming
+the embed.
 
 ## Working agreements on this site
 

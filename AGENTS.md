@@ -40,9 +40,14 @@ guessing at fixes.
 **Raw HTML in `.Rmd` must sit at column 0.** Four or more spaces of indent makes Pandoc
 read it as a fenced code block.
 
-**`style.css` is shared by index/about/projects.** New rules need a `.pf-` prefix.
+**`style.css` is shared by index/about/projects.** New rules need a `.pf-` prefix. It is
+linked from `head_extras.html`, **not** via the `.Rmd` `css:` option: the Bootstrap 5
+`bs_theme()` silently ignores `css:` and drops the shared stylesheet entirely. The compiled
+theme is written to `site_libs/bootstrap-5.3.8/bootstrap.min.css`.
 
-**Use px, not rem.** Bootstrap 3 sets the root font-size to 10px, so rem units are wrong here.
+**Use px, not rem.** Bootstrap 3 set a 10px root font-size, which made rem units misleading.
+The Bootstrap 5 theme uses the browser default, but keep new rules in px to match the
+existing stylesheet.
 
 **Windows specifics** — the repo path contains spaces and is inside OneDrive:
 - Renders with the escaped path, e.g. `file:///C:/Users/martinchan/OneDrive%20-%20Microsoft/...`
@@ -88,7 +93,8 @@ Tracked in `https://github.com/martinctc/martinctc.github.io/pull/3`.
 Branches in play:
 - `feat/portfolio-netflix-overhaul` — the PR branch (Netflix-style project rows, `projects.Rmd`)
 - `chore/site-refresh-phase1` — an earlier unmerged branch (index/about copy refresh), left alone
-- Site publishes from `master`. There is no Actions workflow; `master` *is* the deploy.
+- Site publishes from `master`. Publishing *is* the deploy (GitHub Pages serves the
+  committed HTML). The only Actions workflow, `render-check.yml`, just validates renders.
 
 Before merging, the one unverified thing is the YouTube embed **on the live deploy** — it has
 only been verified over `http://` locally. Merge, then check the deployed portfolio page.
@@ -101,7 +107,7 @@ if you want the PR tidy.
 ## Site layout
 
 - `index.Rmd`, `about.Rmd`, `portfolio.Rmd`, `projects.Rmd` — page sources (rendered to `.html`)
-- `_site.yml` — theme and navbar (navbar changes ripple into every committed `.html`)
+- `_site.yml` — theme (bslib Bootstrap 5) and navbar (changes ripple into every committed `.html`)
 - `style.css` — shared stylesheet
 - `portfolio.js` — arrow buttons for the project rows; progressive enhancement only
 - `qa/` — local QA screenshots, gitignored

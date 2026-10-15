@@ -19,31 +19,31 @@ navbar:
     - text: "Packages"
       menu:
       - text: "surveytoolbox"
-        icon: fa-archive
+        icon: fa-clipboard-list
         href: https://martinctc.github.io/surveytoolbox
       - text: "tstoolbox"
-        icon: fa-archive
+        icon: fa-chart-line
         href: https://www.github.com/martinctc/tstoolbox
       - text: "rwa"
-        icon: fa-archive
+        icon: fa-scale-balanced
         href: https://martinctc.github.io/rwa
       - text: "textworks"
-        icon: fa-archive
+        icon: fa-font
         href: https://www.github.com/martinctc/textworks
       - text: "zipcodes"
-        icon: fa-archive
+        icon: fa-location-dot
         href: https://www.github.com/martinctc/zipcodes
       - text: "modeltoolbox"
-        icon: fa-archive
+        icon: fa-gears
         href: https://www.github.com/martinctc/modeltoolbox
       - text: "hkdatasets"
-        icon: fa-archive
+        icon: fa-database
         href: https://hong-kong-districts-info.github.io/hkdatasets/
       - text: "parallaxr"
-        icon: fa-archive
+        icon: fa-image
         href: https://martinctc.github.io/parallaxr
       - text: "gpxtoolbox"
-        icon: fa-archive
+        icon: fa-route
         href: https://martinctc.github.io/gpxtoolbox/
     - text: "Blog"
       icon: fa-rss

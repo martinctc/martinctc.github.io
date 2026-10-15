@@ -1,4 +1,9 @@
 
+:root {
+  --pf-accent: #00bc8c;
+  --pf-accent-rgb: 0, 188, 140;
+}
+
 /* This change the style of the main container that wraps the whole R Markdown document. It allows the parallax image to be full width */
 .main-container {
     max-width: 100% !important;
@@ -101,7 +106,7 @@ a {
   box-shadow: 0 10px 26px rgba(0,0,0,.55);
 }
 .pf-card:focus-visible {
-  outline: 2px solid #00bc8c;
+  outline: 2px solid var(--pf-accent);
   outline-offset: 3px;
 }
 
@@ -150,8 +155,8 @@ a {
   letter-spacing: .06em;
   text-transform: uppercase;
   background: rgba(0,0,0,.75);
-  color: #00bc8c;
-  border: 1px solid rgba(0,188,140,.55);
+  color: var(--pf-accent);
+  border: 1px solid rgba(var(--pf-accent-rgb), .55);
   border-radius: 4px;
   padding: 2px 7px;
   line-height: 1.4;
@@ -206,7 +211,7 @@ a {
 .pf-arrow[disabled] { opacity: 0 !important; pointer-events: none; }
 .pf-arrow--l { left: 6px; }
 .pf-arrow--r { right: 6px; }
-.pf-arrow:focus-visible { outline: 2px solid #00bc8c; }
+.pf-arrow:focus-visible { outline: 2px solid var(--pf-accent); }
 
 /* Project screenshots on the write-ups page. width/height attributes on the
    img reserve the box so lazy-loading doesn't shift the text; CSS scales them
@@ -222,10 +227,10 @@ a {
 
 /* Cards linking to the write-ups page */
 .section.level3 { scroll-margin-top: 70px; }
-.section.level3:target > h3 { color: #00bc8c; }
+.section.level3:target > h3 { color: var(--pf-accent); }
 .pf-back { margin: 6px 0 0; }
 .pf-back a { font-size: 14px; color: #7f8c8d; }
-.pf-back a:hover { color: #00bc8c; }
+.pf-back a:hover { color: var(--pf-accent); }
 
 @media (max-width: 768px) {
   .pf-card { flex-basis: 230px; }

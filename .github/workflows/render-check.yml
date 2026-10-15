@@ -17,10 +17,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Guard against self-contained (base64) assets
+      - name: Guard against self-contained (inlined) assets
         run: |
           if git grep -nE 'data:(image|font)/[a-z+]+;base64' -- '*.html'; then
             echo "::error::Rendered HTML contains base64-inlined assets. Render the whole site with render_site(), never a single page with render()."
+            exit 1
+          fi
+          if git grep -nF 'data:text/html' -- '*.html'; then
+            echo "::error::Rendered HTML embeds an iframe as a data:text/html URI (renders blank/black). self_contained inlines remote iframes; render the whole site with render_site()."
             exit 1
           fi
 

@@ -4,6 +4,22 @@
   --pf-accent-rgb: 0, 188, 140;
 }
 
+/* ===== Bootstrap 5 navbar =====
+   rmarkdown still emits the Bootstrap 3 `navbar-inverse` class, which BS5
+   ignores, so navbar text falls back to the light-theme colour and loses
+   contrast against the green background. Pin it back to white. Targets the
+   BS3 list markup rmarkdown produces, not the dropdown menu items. */
+.navbar-brand,
+.navbar-nav > li > a,
+.navbar-nav > li.active > a,
+.navbar-nav > li > a.active {
+  color: #fff;
+}
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+  color: #d9f5ec;
+}
+
 /* This change the style of the main container that wraps the whole R Markdown document. It allows the parallax image to be full width */
 .main-container {
     max-width: 100% !important;

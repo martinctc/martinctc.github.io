@@ -57,5 +57,5 @@ navbar:
       href: https://github.com/martinctc       # CHANGE HERE 
 output:
   html_document:
-    theme: darkly
+    theme: !expr bslib::bs_theme(version = 5, bootswatch = "darkly", "navbar-bg" = "#00bc8c")
     highlight: textmate

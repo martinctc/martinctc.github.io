@@ -43,10 +43,10 @@ guessing at fixes.
 **Raw HTML in `.Rmd` must sit at column 0.** Four or more spaces of indent makes Pandoc
 read it as a fenced code block.
 
-**`style.css` is shared by index/about/projects.** New rules need a `.pf-` prefix. It is
-linked from `head_extras.html`, **not** via the `.Rmd` `css:` option: the Bootstrap 5
-`bs_theme()` silently ignores `css:` and drops the shared stylesheet entirely. The compiled
-theme is written to `site_libs/bootstrap-5.3.8/bootstrap.min.css`.
+**`style.css` is shared by index/about/projects.** New rules need a `.pf-` prefix. Under the
+Bootstrap 5 theme it is compiled (via the `.Rmd` `css:` option) into the committed
+`site_libs/bootstrap-5.3.8/bootstrap.min.css`, so **any edit to `style.css` needs a
+`render_site()` before it takes effect** — the compiled theme is a separate tracked artifact.
 
 **Use px, not rem.** Bootstrap 3 set a 10px root font-size, which made rem units misleading.
 The Bootstrap 5 theme uses the browser default, but keep new rules in px to match the

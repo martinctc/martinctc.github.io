@@ -20,6 +20,13 @@
   color: #d9f5ec;
 }
 
+/* Portfolio has no parallax header, so its opening line sits flush under the
+   fixed navbar (index/about are pushed down by their header image). Nudge the
+   first block down so the text clears the bar. */
+.pf-top {
+  padding-top: 24px;
+}
+
 /* This change the style of the main container that wraps the whole R Markdown document. It allows the parallax image to be full width */
 .main-container {
     max-width: 100% !important;

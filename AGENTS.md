@@ -1,8 +1,10 @@
 # Working on this repo
 
 Personal website (https://martinctc.github.io), built with R Markdown. Rendered `.html`
-is **committed to git** — there is no CI, so anything not rendered and committed is not live.
-The blog sub-page is a separate Jekyll site; don't touch it.
+is **committed to git** — publishing *is* the deploy (GitHub Pages serves the committed HTML),
+so anything not rendered and committed is not live. The only Actions workflow,
+`render-check.yml`, validates the committed output; it does not deploy. The blog sub-page is a
+separate Jekyll site; don't touch it.
 
 ## Commands
 
@@ -92,22 +94,23 @@ the embed.
 
 ## Current open work
 
-**PR #3** — `feat/portfolio-netflix-overhaul` -> `master`, pushed, **not merged**.
-Tracked in `https://github.com/martinctc/martinctc.github.io/pull/3`.
+**PR #4** — `fix/site-audit-remediation` -> `master`, open, CI green (`render-and-check`),
+**not merged**. Tracked in `https://github.com/martinctc/martinctc.github.io/pull/4`. Covers the
+portfolio page size/iframe fix, copy refresh, a11y/SEO, UA removal, dead-asset cleanup and the
+Bootstrap 5 upgrade.
 
 Branches in play:
-- `feat/portfolio-netflix-overhaul` — the PR branch (Netflix-style project rows, `projects.Rmd`)
-- `chore/site-refresh-phase1` — an earlier unmerged branch (index/about copy refresh), left alone
-- Site publishes from `master`. Publishing *is* the deploy (GitHub Pages serves the
-  committed HTML). The only Actions workflow, `render-check.yml`, just validates renders.
+- `master` — the live site. Publishing from `master` *is* the deploy (GitHub Pages serves the
+  committed HTML); the only workflow, `render-check.yml`, validates the committed output.
+- `chore/site-refresh-phase1` (PR #2) — earlier index/about copy refresh, still open, left alone.
+- `feat/portfolio-netflix-overhaul` (PR #3) — merged 2026-10-15.
 
-Before merging, the one unverified thing is the YouTube embed **on the live deploy** — it has
+Before merging #4, the one thing unverified is the YouTube embed **on the live deploy** — it has
 only been verified over `http://` locally. Merge, then check the deployed portfolio page.
 
-Copilot left two review findings on PR #3; both were valid and are fixed in `da86df3`
-(invalid `<p></a></p>` card markup, and arrow buttons that were focusable-but-inert
-without JS). The threads show as `outdated`, not `resolved`, so resolve them manually
-if you want the PR tidy.
+Copilot left two findings on PR #4; both fixed (`8df3d6e` scoped the `render-check` guard to the
+site's own pages, `a6a4184` gave the cover image an empty `alt`). Its threads show as `outdated`,
+not `resolved` — resolve manually if you want the PR tidy.
 
 ## Site layout
 

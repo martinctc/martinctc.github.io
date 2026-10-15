@@ -8,7 +8,6 @@ The blog sub-page is a separate Jekyll site; don't touch it.
 
 ```R
 rmarkdown::render_site(encoding = "UTF-8")   # full site
-rmarkdown::render('portfolio.Rmd')          # single page, much faster while iterating
 ```
 
 Local preview with the YouTube embed working:
@@ -20,6 +19,11 @@ python -m http.server 8000     # then browse http://localhost:8000/portfolio.htm
 ## The traps that cost the most time
 
 These are all real bugs hit during the portfolio work. Check them before debugging elsewhere.
+
+**Never render a single page with `rmarkdown::render('page.Rmd')`.** `render_site()` forces
+`self_contained: FALSE`, but a bare single-page render defaults to `TRUE` and base64-inlines
+every image, stylesheet and webfont into the HTML. One `render('portfolio.Rmd')` took the
+page from 29 KB to 9.7 MB. Always render the whole site.
 
 **`after_body:` does not add `<script>` tags.** It inlines the file verbatim, so
 `portfolio.js` must contain its own `<script>`/`</script>`. Without them the JS renders

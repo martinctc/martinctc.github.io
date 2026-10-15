@@ -6,32 +6,109 @@ output:
     css: style.css
     includes:
        in_header: GA_Script.html
+       after_body: portfolio.js
 ---
 
 <div class="mycontent">
+
+A collection of things that I've built and shipped - packages, small web
+apps, and the odd game. Most of them started as tools for my own use, and
+all of them are open source.
 
 ## My packages
 
 I've authored several R packages, which are all available on [GitHub](https://www.github.com/martinctc):
 
-* [surveytoolbox](https://www.github.com/martinctc/surveytoolbox)
-* [tstoolbox](https://www.github.com/martinctc/tstoolbox)
-* [rwa](https://www.github.com/martinctc/rwa)
-* [textworks](https://www.github.com/martinctc/textworks)
-* [zipcodes](https://www.github.com/martinctc/zipcodes)
-* [modeltoolbox](https://www.github.com/martinctc/modeltoolbox)
-* [gpxtoolbox](https://www.github.com/martinctc/gpxtoolbox)
+</div>
+
+```{=html}
+<div class="pf-rowblock">
+<div class="pf-rowwrap">
+<div class="pf-row">
+<a class="pf-card" href="https://martinctc.github.io/surveytoolbox" target="_blank" rel="noopener">
+<div class="pf-thumb"><span class="pf-badge">R</span><img src="images/projects/surveytoolbox.jpg" alt="surveytoolbox documentation site" loading="lazy" width="1280" height="720"><span class="pf-cardtitle">surveytoolbox</span></div>
+<div class="pf-cap"><div class="pf-oneliner">Tidy support functions for survey analysis.</div></div>
+</a>
+<a class="pf-card" href="https://github.com/martinctc/tstoolbox" target="_blank" rel="noopener">
+<div class="pf-thumb pf-thumb--css pf-css-r"><span class="pf-badge">R</span><span class="pf-glyph">&#128200;</span><span class="pf-cardtitle">tstoolbox</span></div>
+<div class="pf-cap"><div class="pf-oneliner">Useful tools for time series analysis in R.</div></div>
+</a>
+<a class="pf-card" href="https://martinctc.github.io/rwa" target="_blank" rel="noopener">
+<div class="pf-thumb"><span class="pf-badge">R</span><img src="images/projects/rwa.jpg" alt="rwa package site" loading="lazy" width="1280" height="720"><span class="pf-cardtitle">rwa</span></div>
+<div class="pf-cap"><div class="pf-oneliner">Perform a Relative Weights Analysis in R.</div></div>
+</a>
+<a class="pf-card" href="https://github.com/martinctc/textworks" target="_blank" rel="noopener">
+<div class="pf-thumb pf-thumb--css pf-css-r"><span class="pf-badge">R</span><span class="pf-glyph">&#128221;</span><span class="pf-cardtitle">textworks</span></div>
+<div class="pf-cap"><div class="pf-oneliner">Save time working with survey and text data!</div></div>
+</a>
+<a class="pf-card" href="https://github.com/martinctc/zipcodes" target="_blank" rel="noopener">
+<div class="pf-thumb pf-thumb--css pf-css-r"><span class="pf-badge">R</span><span class="pf-glyph">&#128506;</span><span class="pf-cardtitle">zipcodes</span></div>
+<div class="pf-cap"><div class="pf-oneliner">US zip codes database for R.</div></div>
+</a>
+<a class="pf-card" href="https://github.com/martinctc/modeltoolbox" target="_blank" rel="noopener">
+<div class="pf-thumb pf-thumb--css pf-css-r"><span class="pf-badge">R</span><span class="pf-glyph">&#9881;</span><span class="pf-cardtitle">modeltoolbox</span></div>
+<div class="pf-cap"><div class="pf-oneliner">Convenience functions for building models in R.</div></div>
+</a>
+<a class="pf-card" href="https://martinctc.github.io/gpxtoolbox/" target="_blank" rel="noopener">
+<div class="pf-thumb"><span class="pf-badge">R</span><img src="images/projects/gpxtoolbox.jpg" alt="gpxtoolbox package site" loading="lazy" width="1280" height="720"><span class="pf-cardtitle">gpxtoolbox</span></div>
+<div class="pf-cap"><div class="pf-oneliner">Tools for analysing and visualising GPX files.</div></div>
+</a>
+<a class="pf-card" href="https://martinctc.github.io/parallaxr" target="_blank" rel="noopener">
+<div class="pf-thumb"><span class="pf-badge">R</span><img src="images/projects/parallaxr.jpg" alt="parallaxr package site" loading="lazy" width="1280" height="720"><span class="pf-cardtitle">parallaxr</span></div>
+<div class="pf-cap"><div class="pf-oneliner">Generate a parallax scroll document in R with YAML and Markdown.</div></div>
+</a>
+<a class="pf-card" href="https://martinctc.github.io/devtoolbox" target="_blank" rel="noopener">
+<div class="pf-thumb"><span class="pf-badge">R</span><img src="images/projects/devtoolbox.jpg" alt="devtoolbox package site" loading="lazy" width="1280" height="720"><span class="pf-cardtitle">devtoolbox</span></div>
+<div class="pf-cap"><div class="pf-oneliner">Tools for the R developer.</div></div>
+</a>
+<a class="pf-card" href="https://martinctc.github.io/mschart2/" target="_blank" rel="noopener">
+<div class="pf-thumb"><span class="pf-badge">R</span><img src="images/projects/mschart2.jpg" alt="mschart2 package site" loading="lazy" width="1280" height="720"><span class="pf-cardtitle">mschart2</span></div>
+<div class="pf-cap"><div class="pf-oneliner">Experimental add-on to {mschart} with native Office chart features.</div></div>
+</a>
+<a class="pf-card" href="https://hong-kong-districts-info.github.io/hkdatasets/" target="_blank" rel="noopener">
+<div class="pf-thumb"><span class="pf-badge">R</span><img src="images/projects/hkdatasets.jpg" alt="hkdatasets package site" loading="lazy" width="1280" height="720"><span class="pf-cardtitle">hkdatasets</span></div>
+<div class="pf-cap"><div class="pf-oneliner">An R data package containing datasets related to Hong Kong.</div></div></a>
+</div>
+<button type="button" class="pf-arrow pf-arrow--l" aria-label="Scroll R packages left">&#8249;</button>
+<button type="button" class="pf-arrow pf-arrow--r" aria-label="Scroll R packages right">&#8250;</button>
+</div>
+```
+</div>
+
+<div class="mycontent">
 
 Most of these packages were to some extent "by-products" of the analysis that I've been doing for the last couple of years, which I decided would have greater value developed into packages. 
 
 In addition, I maintain the following packages as part of my work with Microsoft Viva Insights: 
 
-* [vivainsights - R](https://microsoft.github.io/vivainsights/)
-* [vivainsights - Python](https://microsoft.github.io/vivainsights-py/)
-* [wpa](https://microsoft.github.io/wpa/)
+</div>
+
+```{=html}
+<div class="pf-rowblock">
+<div class="pf-rowwrap">
+<div class="pf-row">
+<a class="pf-card" href="https://microsoft.github.io/vivainsights/" target="_blank" rel="noopener">
+<div class="pf-thumb"><span class="pf-badge">R</span><img src="images/projects/vivainsights.jpg" alt="vivainsights R package site" loading="lazy" width="1280" height="720"><span class="pf-cardtitle">vivainsights</span></div>
+<div class="pf-cap"><div class="pf-oneliner">Analyze and visualize Viva Insights data in R.</div></div>
+</a>
+<a class="pf-card" href="https://microsoft.github.io/vivainsights-py/" target="_blank" rel="noopener">
+<div class="pf-thumb"><span class="pf-badge">Python</span><img src="images/projects/vivainsights-py.jpg" alt="vivainsights Python package site" loading="lazy" width="1280" height="720"><span class="pf-cardtitle">vivainsights-py</span></div>
+<div class="pf-cap"><div class="pf-oneliner">Analyze and visualize Viva Insights data in Python.</div></div>
+</a>
+<a class="pf-card" href="https://microsoft.github.io/wpa/" target="_blank" rel="noopener">
+<div class="pf-thumb"><span class="pf-badge">R</span><img src="images/projects/wpa.jpg" alt="wpa package site" loading="lazy" width="1280" height="720"><span class="pf-cardtitle">wpa</span></div>
+<div class="pf-cap"><div class="pf-oneliner">Analyze and visualize Microsoft Workplace Analytics data in R.</div></div></a>
+</div>
+<button type="button" class="pf-arrow pf-arrow--l" aria-label="Scroll work packages left">&#8249;</button>
+<button type="button" class="pf-arrow pf-arrow--r" aria-label="Scroll work packages right">&#8250;</button>
+</div>
+</div>
+
+<div class="mycontent">
 
 If you have any comments or questions about these packages, please get in touch - any feedback would be valuable!
 
+```
 ---
 
 ## Vibe-coded projects
@@ -42,84 +119,54 @@ development to turn an idea into a working tool as directly as possible.
 These are typically self-contained, browser-based, and built for a specific
 real-world need of mine.
 
-### Track Tag Manager
+</div>
 
-_A local Python app for tagging and organising tracks, designed for DJ workflows._
-
-<a href="https://martinctc.github.io/track-tag-manager/" target="_blank" rel="noopener">
-<img src="images/track-tag-manager.png" alt="Track Tag Manager screenshot" style="display:block; max-width:100%; width:700px; margin:1.5em auto; border-radius:6px; box-shadow:0 4px 12px rgba(0,0,0,0.4);" />
+```{=html}
+<div class="pf-rowblock">
+<div class="pf-rowwrap">
+<div class="pf-row">
+<a class="pf-card" href="projects.html#track-tag-manager">
+<div class="pf-thumb"><span class="pf-badge">Python</span><img src="images/projects/track-tag-manager.jpg" alt="Track Tag Manager screenshot" loading="lazy" width="800" height="508"><span class="pf-cardtitle">Track Tag Manager</span></div>
+<div class="pf-cap"><div class="pf-oneliner">A local Python app for tagging and organising tracks, designed for DJ workflows.</div></div>
 </a>
-
-[Track Tag Manager](https://martinctc.github.io/track-tag-manager/) is a
-Python desktop app I built to help manage track metadata as part of a DJ
-workflow — making it easier to tag, filter, and curate tracks without being
-locked into a single piece of DJ software. It runs locally and offline, so
-your library never leaves your machine.
-
-- Project page: <https://martinctc.github.io/track-tag-manager/>
-- Source code: <https://github.com/martinctc/track-tag-manager>
-
----
-
-### Tri Harder
-
-_An AI-powered triathlon coaching app._
-
-<a href="https://martinctc.github.io/tri-harder-app/" target="_blank" rel="noopener">
-<img src="images/tri-harder-app.jpeg" alt="Tri Harder screenshot" style="display:block; max-width:100%; width:700px; margin:1.5em auto; border-radius:6px; box-shadow:0 4px 12px rgba(0,0,0,0.4);" />
+<a class="pf-card" href="projects.html#tri-harder">
+<div class="pf-thumb"><span class="pf-badge">TypeScript</span><img src="images/projects/tri-harder-app.jpg" alt="Tri Harder screenshot" loading="lazy" width="800" height="482"><span class="pf-cardtitle">Tri Harder</span></div>
+<div class="pf-cap"><div class="pf-oneliner">An AI-powered triathlon coaching app.</div></div>
 </a>
-
-[Tri Harder](https://martinctc.github.io/tri-harder-app/) is a browser-based
-triathlon coaching app that uses AI to help athletes plan and adapt their
-training across swim, bike, and run. It's designed to make structured,
-personalised coaching accessible without needing a paid platform — runs
-entirely in the browser, no install required.
-
-- Live app: <https://martinctc.github.io/tri-harder-app/>
-- Source code: <https://github.com/martinctc/tri-harder-app>
-
----
-
-### Wrava
-
-_A local-first writing app that tracks and analyses your writing activity._
-
-<a href="https://martinctc.github.io/wrava/" target="_blank" rel="noopener">
-<img src="images/wrava.png" alt="Wrava screenshot" style="display:block; max-width:100%; width:700px; margin:1.5em auto; border-radius:6px; box-shadow:0 4px 12px rgba(0,0,0,0.4);" />
+<a class="pf-card" href="projects.html#wrava">
+<div class="pf-thumb"><span class="pf-badge">TypeScript</span><img src="images/projects/wrava.jpg" alt="Wrava screenshot" loading="lazy" width="800" height="469"><span class="pf-cardtitle">Wrava</span></div>
+<div class="pf-cap"><div class="pf-oneliner">A local-first writing app that tracks and analyses your writing activity.</div></div>
 </a>
-
-[Wrava](https://martinctc.github.io/wrava/) turns a folder of ordinary
-Markdown files into a writing practice you can see. Every accepted change is
-measured as words added, words deleted, and net document growth, so a
-distraction-light editor doubles as an activity tracker. The analytics view
-turns those raw edits into a 12-week trend, a consistency heatmap, and
-per-document and per-tag breakdowns. It is open source, and everything stays
-on your own machine.
-
-- Project page: <https://martinctc.github.io/wrava/>
-- Source code: <https://github.com/martinctc/wrava>
-
----
-
-### Dominium
-
-_A turn-based strategy game for 2 to 4 players, playable in the browser._
-
-<a href="https://martinctc.github.io/dominium/" target="_blank" rel="noopener">
-<img src="images/dominium.png" alt="Dominium screenshot" style="display:block; max-width:100%; width:700px; margin:1.5em auto; border-radius:6px; box-shadow:0 4px 12px rgba(0,0,0,0.4);" />
+<a class="pf-card" href="projects.html#dominium">
+<div class="pf-thumb"><span class="pf-badge">TypeScript</span><img src="images/projects/dominium.jpg" alt="Dominium screenshot" loading="lazy" width="800" height="469"><span class="pf-cardtitle">Dominium</span></div>
+<div class="pf-cap"><div class="pf-oneliner">A turn-based strategy game for 2 to 4 players, playable in the browser.</div></div>
 </a>
+<a class="pf-card" href="https://martinctc.github.io/opencode-dashboard/" target="_blank" rel="noopener">
+<div class="pf-thumb"><span class="pf-badge">Python</span><img src="images/projects/opencode-dashboard.jpg" alt="OpenCode Dashboard screenshot" loading="lazy" width="1376" height="774"><span class="pf-cardtitle">OpenCode Dashboard</span></div>
+<div class="pf-cap"><div class="pf-oneliner">A local, read-only dashboard for exploring your OpenCode token usage.</div></div>
+</a>
+<a class="pf-card" href="https://martinctc.github.io/house-of-cats/" target="_blank" rel="noopener">
+<div class="pf-thumb"><span class="pf-badge">TypeScript</span><img src="images/projects/house-of-cats.png" alt="House of Cats screenshot" loading="lazy" width="800" height="450"><span class="pf-cardtitle">House of Cats</span></div>
+<div class="pf-cap"><div class="pf-oneliner">An experimental isometric 2.5D browser scene with pixel-art cats.</div></div>
+</a>
+<a class="pf-card" href="https://martinctc.github.io/bike-routes/" target="_blank" rel="noopener">
+<div class="pf-thumb pf-thumb--css pf-css-bike"><span class="pf-badge">JS</span><span class="pf-glyph">&#128690;</span><span class="pf-cardtitle">Bike Routes</span></div>
+<div class="pf-cap"><div class="pf-oneliner">A curated collection of cycling routes, with maps, elevation profiles and GPX downloads.</div></div>
+</a>
+<a class="pf-card" href="https://github.com/martinctc/ds-quiz" target="_blank" rel="noopener">
+<div class="pf-thumb pf-thumb--css pf-css-quiz"><span class="pf-badge">JS</span><span class="pf-glyph">&#128221;</span><span class="pf-cardtitle">ds-quiz</span></div>
+<div class="pf-cap"><div class="pf-oneliner">A single-page assessment tool for data science knowledge.</div></div></a>
+</div>
+<button type="button" class="pf-arrow pf-arrow--l" aria-label="Scroll apps left">&#8249;</button>
+<button type="button" class="pf-arrow pf-arrow--r" aria-label="Scroll apps right">&#8250;</button>
+</div>
+</div>
+```
 
-[Dominium](https://martinctc.github.io/dominium/) is a grid-based strategy
-game descended from a pen-and-paper game I played at school. Each player
-defends a base, gathers food, wood and stone, and builds an army to destroy
-every other base on the board. Turns run in three phases of income, build,
-and act, with six unit types, builder structures, fog of war, and terrain
-that shapes where you can move and build. You can play hot-seat with friends
-or against AI opponents, and there is an experimental isometric view
-alongside the classic pixel art.
+<div class="mycontent">
 
-- Play it now: <https://martinctc.github.io/dominium/>
-- Source code: <https://github.com/martinctc/dominium>
+For a closer look at each of these projects, I've written up the ideas and
+thinking behind them on the [vibe-coded projects page](projects.html).
 
 ---
 
@@ -179,7 +226,9 @@ htmltools::includeHTML("parallax/interview-header.html")
 [Jonathan Ng](https://datastrategywithjonathan.com/) is a best-selling instructor and Data Scientist who interviewed me on how I use R in a market research and consulting environment, and my personal journey from Excel to R. Check out the full interview here:
 
 <br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/o9wHpvIYBDM" frameborder="0" allowfullscreen></iframe>
+<div class="pf-video">
+<iframe src="https://www.youtube-nocookie.com/embed/o9wHpvIYBDM" title="Philosopher to Data Analyst / Strategy Consultant - interview with Jonathan Ng" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 </div>
 

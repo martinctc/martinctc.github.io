@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Projects - Martin Chan</title>
+
+<script src="site_libs/header-attrs-2.31/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/darkly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138721086-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-138721086-1');
+</script>
+<!-- End of GA_Script.html -->
+
+<!-- Add Umami script -->
+<script
+  defer
+  src="https://ca-umami-prod.lemonglacier-6a5930b7.uksouth.azurecontainerapps.io/script.js"
+  data-website-id="cb9f4498-2e2c-4c1f-86f1-70d691b74fdb"
+  data-domains="martinctc.github.io"
+  data-do-not-track="true"
+  data-exclude-search="true"
+  data-exclude-hash="true"></script>
+<!-- End of Umami script -->
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Martin Chan</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Home
+  </a>
+</li>
+<li>
+  <a href="about.html">
+    <span class="fa fa-user"></span>
+     
+    About
+  </a>
+</li>
+<li>
+  <a href="portfolio.html">
+    <span class="fa fa-file-pdf-o"></span>
+     
+    Portfolio
+  </a>
+</li>
+<li>
+  <a href="projects.html">
+    <span class="fa fa-rocket"></span>
+     
+    Projects
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Packages
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://martinctc.github.io/surveytoolbox">
+        <span class="fa fa-archive"></span>
+         
+        surveytoolbox
+      </a>
+    </li>
+    <li>
+      <a href="https://www.github.com/martinctc/tstoolbox">
+        <span class="fa fa-archive"></span>
+         
+        tstoolbox
+      </a>
+    </li>
+    <li>
+      <a href="https://martinctc.github.io/rwa">
+        <span class="fa fa-archive"></span>
+         
+        rwa
+      </a>
+    </li>
+    <li>
+      <a href="https://www.github.com/martinctc/textworks">
+        <span class="fa fa-archive"></span>
+         
+        textworks
+      </a>
+    </li>
+    <li>
+      <a href="https://www.github.com/martinctc/zipcodes">
+        <span class="fa fa-archive"></span>
+         
+        zipcodes
+      </a>
+    </li>
+    <li>
+      <a href="https://www.github.com/martinctc/modeltoolbox">
+        <span class="fa fa-archive"></span>
+         
+        modeltoolbox
+      </a>
+    </li>
+    <li>
+      <a href="https://hong-kong-districts-info.github.io/hkdatasets/">
+        <span class="fa fa-archive"></span>
+         
+        hkdatasets
+      </a>
+    </li>
+    <li>
+      <a href="https://martinctc.github.io/parallaxr">
+        <span class="fa fa-archive"></span>
+         
+        parallaxr
+      </a>
+    </li>
+    <li>
+      <a href="https://martinctc.github.io/gpxtoolbox/">
+        <span class="fa fa-archive"></span>
+         
+        gpxtoolbox
+      </a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="https://martinctc.github.io/blog/">
+    <span class="fa fa-rss"></span>
+     
+    Blog
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="mailto:martinchan53@gmail.com">
+    <span class="fa fa-envelope-o"></span>
+     
+    Contact me
+  </a>
+</li>
+<li>
+  <a href="https://github.com/martinctc">
+    <span class="fa fa-github"></span>
+     
+    GitHub
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+
+</div>
+
+
+<div id="vibe-coded-projects" class="section level2 mycontent">
+<h2>Vibe-coded projects</h2>
+<p>Alongside R packages, I’ve recently been building small web apps and
+tools through “vibe coding” — quick, exploratory builds where I use
+AI-assisted development to turn an idea into a working tool as directly
+as possible. These are typically self-contained, browser-based, and
+built for a specific real-world need of mine.</p>
+<hr />
+<div id="track-tag-manager" class="section level3">
+<h3>Track Tag Manager</h3>
+<p class="pf-back">
+<a href="portfolio.html">↑ All projects</a>
+</p>
+<p><em>A local Python app for tagging and organising tracks, designed
+for DJ workflows.</em></p>
+<p><a href="https://martinctc.github.io/track-tag-manager/" target="_blank" rel="noopener">
+<img class="pf-shot" src="images/track-tag-manager.png" alt="Track Tag Manager screenshot" width="2256" height="1432" loading="lazy" />
+</a></p>
+<p><a href="https://martinctc.github.io/track-tag-manager/">Track Tag
+Manager</a> is a Python desktop app I built to help manage track
+metadata as part of a DJ workflow — making it easier to tag, filter, and
+curate tracks without being locked into a single piece of DJ software.
+It runs locally and offline, so your library never leaves your
+machine.</p>
+<ul>
+<li>Project page: <a
+href="https://martinctc.github.io/track-tag-manager/"
+class="uri">https://martinctc.github.io/track-tag-manager/</a></li>
+<li>Source code: <a
+href="https://github.com/martinctc/track-tag-manager"
+class="uri">https://github.com/martinctc/track-tag-manager</a></li>
+</ul>
+<hr />
+</div>
+<div id="tri-harder" class="section level3">
+<h3>Tri Harder</h3>
+<p class="pf-back">
+<a href="portfolio.html">↑ All projects</a>
+</p>
+<p><em>An AI-powered triathlon coaching app.</em></p>
+<p><a href="https://martinctc.github.io/tri-harder-app/" target="_blank" rel="noopener">
+<img class="pf-shot" src="images/tri-harder-app.jpeg" alt="Tri Harder screenshot" width="2006" height="1209" loading="lazy" />
+</a></p>
+<p><a href="https://martinctc.github.io/tri-harder-app/">Tri Harder</a>
+is a browser-based triathlon coaching app that uses AI to help athletes
+plan and adapt their training across swim, bike, and run. It’s designed
+to make structured, personalised coaching accessible without needing a
+paid platform — runs entirely in the browser, no install required.</p>
+<ul>
+<li>Live app: <a href="https://martinctc.github.io/tri-harder-app/"
+class="uri">https://martinctc.github.io/tri-harder-app/</a></li>
+<li>Source code: <a href="https://github.com/martinctc/tri-harder-app"
+class="uri">https://github.com/martinctc/tri-harder-app</a></li>
+</ul>
+<hr />
+</div>
+<div id="wrava" class="section level3">
+<h3>Wrava</h3>
+<p class="pf-back">
+<a href="portfolio.html">↑ All projects</a>
+</p>
+<p><em>A local-first writing app that tracks and analyses your writing
+activity.</em></p>
+<p><a href="https://martinctc.github.io/wrava/" target="_blank" rel="noopener">
+<img class="pf-shot" src="images/wrava.png" alt="Wrava screenshot" width="2800" height="1640" loading="lazy" />
+</a></p>
+<p><a href="https://martinctc.github.io/wrava/">Wrava</a> turns a folder
+of ordinary Markdown files into a writing practice you can see. Every
+accepted change is measured as words added, words deleted, and net
+document growth, so a distraction-light editor doubles as an activity
+tracker. The analytics view turns those raw edits into a 12-week trend,
+a consistency heatmap, and per-document and per-tag breakdowns. It is
+open source, and everything stays on your own machine.</p>
+<ul>
+<li>Project page: <a href="https://martinctc.github.io/wrava/"
+class="uri">https://martinctc.github.io/wrava/</a></li>
+<li>Source code: <a href="https://github.com/martinctc/wrava"
+class="uri">https://github.com/martinctc/wrava</a></li>
+</ul>
+<hr />
+</div>
+<div id="dominium" class="section level3">
+<h3>Dominium</h3>
+<p class="pf-back">
+<a href="portfolio.html">↑ All projects</a>
+</p>
+<p><em>A turn-based strategy game for 2 to 4 players, playable in the
+browser.</em></p>
+<p><a href="https://martinctc.github.io/dominium/" target="_blank" rel="noopener">
+<img class="pf-shot" src="images/dominium.png" alt="Dominium screenshot" width="2800" height="1640" loading="lazy" />
+</a></p>
+<p><a href="https://martinctc.github.io/dominium/">Dominium</a> is a
+grid-based strategy game descended from a pen-and-paper game I played at
+school. Each player defends a base, gathers food, wood and stone, and
+builds an army to destroy every other base on the board. Turns run in
+three phases of income, build, and act, with six unit types, builder
+structures, fog of war, and terrain that shapes where you can move and
+build. You can play hot-seat with friends or against AI opponents, and
+there is an experimental isometric view alongside the classic pixel
+art.</p>
+<ul>
+<li>Play it now: <a href="https://martinctc.github.io/dominium/"
+class="uri">https://martinctc.github.io/dominium/</a></li>
+<li>Source code: <a href="https://github.com/martinctc/dominium"
+class="uri">https://github.com/martinctc/dominium</a></li>
+</ul>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,11 +1,12 @@
 ---
 title: ""
 pagetitle: "Home - Martin Chan"
+lang: en
 output: 
   html_document:
     css: style.css
     includes:
-       in_header: GA_Script.html
+       in_header: [GA_Script.html, head_extras.html, head-home.html]
 ---
 
 ```{r, echo=FALSE}
@@ -15,21 +16,23 @@ htmltools::includeHTML("parallax/london-header.html")
 <br><br><br>
 <div class="mycontent">
 
-<div style="float:right; position:relative; width:200px; right: -40px;"> ![Hi there!](cover.svg) </div>
+<div style="float:right; position:relative; width:200px; right: -40px;"> <img src="cover.svg" alt="" /> </div>
 
-I'm Martin Chan, a consultant with a background in strategy, data science, and market research. My interest is in identifying data science solutions (particularly, in R!) in order to make these decision-making processes more well-informed and rigorous. I'm also interested in particular topics such as:
+I'm Martin Chan, a data scientist with a background in strategy consulting, data science, and market research. My interest is in identifying data science solutions (particularly, in R!) in order to make these decision-making processes more well-informed and rigorous. I'm also interested in particular topics such as:
 
 - Statistics and epistemology - how do we *know*?
 - Text mining and natural language processing
 - Automating workflows of 'knowledge workers'through programming - to reduce error, increase efficiency, and spend less time doing, more time thinking
 
-Previously, I worked as a Consultant at Rainmakers CSI where I was part of a team based in London where we help our clients solve strategic problems and grow their businesses profitably. Examples of what we do include opportunity sizing, customer segmentation and trend identification, but the problems we work with tend to be open-ended and therefore no solution is ever off-the-shelf. 
+I currently work at Microsoft, on Viva Insights and Copilot Analytics. Before that, I spent several years in strategy consulting in London, where we helped our clients solve strategic problems and grow their businesses profitably. Examples of what we worked on include opportunity sizing, customer segmentation and trend identification, but the problems we worked with tend to be open-ended and therefore no solution is ever off-the-shelf. 
 
 ---
 
-I've written several R packages as an exercise to collate and organise the most useful functions that I've written for my analysis. At the time of writing these are only available on GitHub, but the intention is to release them on CRAN at some point. I love interacting with the R community, so you can occasionally spot me at the EARL Conference or the various R Meet-ups in London. Find out more about me [here](https://martinctc.github.io/about).
+I've written several R packages as an exercise to collate and organise the most useful functions that I've written for my analysis. Most of these are available on GitHub, and a couple — {rwa} and {hkdatasets} — are now on CRAN. I love interacting with the R community, so you can occasionally spot me at the EARL Conference or the various R Meet-ups in London. Find out more about me [here](https://martinctc.github.io/about).
 
 To find out more about my work, check out my [portfolio](https://martinctc.github.io/portfolio) and my [blog](https://martinctc.github.io/blog).
+
+If you'd like to get in touch about data, R, or strategy, feel free to [email me](mailto:martinchan53@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/martin-chan-tc/).
 
 </div>
 

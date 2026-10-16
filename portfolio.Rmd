@@ -1,15 +1,16 @@
 ---
 title: ""
 pagetitle: "Portfolio - Martin Chan"
+lang: en
 output: 
   html_document:
     css: style.css
     includes:
-       in_header: GA_Script.html
+       in_header: [GA_Script.html, head_extras.html, head-portfolio.html]
        after_body: portfolio.js
 ---
 
-<div class="mycontent">
+<div class="mycontent pf-top">
 
 A collection of things that I've built and shipped - packages, small web
 apps, and the odd game. Most of them started as tools for my own use, and
@@ -196,7 +197,7 @@ htmltools::includeHTML("parallax/earlconf-header.html")
 
 <div class="mycontent"><br><br>
 
-<div style="float:left; position:relative; width:200px; left: -20px;"> ![Hi there!](images/EARL01.jpeg) </div>
+<div style="float:left; position:relative; width:200px; left: -20px;"> ![Martin Chan presenting at the EARL Conference 2018](images/EARL01.jpeg) </div>
 
 I presented at the EARL Conference 2018 on the challenges of using R for market research, and outlining some of the packages and approaches that help overcome these challenges. 
 

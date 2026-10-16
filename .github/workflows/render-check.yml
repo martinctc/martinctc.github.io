@@ -1,0 +1,63 @@
+name: render-check
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+permissions:
+  contents: read
+
+env:
+  SITE_PAGES: index.html about.html portfolio.html projects.html 404.html
+
+jobs:
+  render-and-check:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Guard against self-contained (inlined) assets
+        run: |
+          if git grep -nE 'data:(image|font)/[a-z+]+;base64' -- $SITE_PAGES; then
+            echo "::error::Rendered site HTML contains base64-inlined assets. Render the whole site with render_site(), never a single page with render()."
+            exit 1
+          fi
+          if git grep -nF 'data:text/html' -- $SITE_PAGES; then
+            echo "::error::Rendered site HTML embeds an iframe as a data:text/html URI (renders blank/black). self_contained inlines remote iframes; render the whole site with render_site()."
+            exit 1
+          fi
+
+      - name: Guard against invalid Pandoc anchor markup
+        run: |
+          if git grep -nF '<p></a></p>' -- $SITE_PAGES; then
+            echo "::error::Found <p></a></p>. Raw HTML containing an inline <a> was split by Pandoc; wrap the block in a fenced {=html} div."
+            exit 1
+          fi
+
+      - uses: r-lib/actions/setup-pandoc@v2
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            any::rmarkdown
+            any::htmltools
+            any::knitr
+
+      - name: Render site
+        run: Rscript -e 'rmarkdown::render_site(encoding = "UTF-8")'
+
+      - name: Warn if committed HTML is out of date
+        continue-on-error: true
+        run: |
+          if ! git diff --quiet -- $SITE_PAGES; then
+            echo "::warning::Committed HTML differs from a fresh render. Run render_site() and commit the output."
+            git --no-pager diff --stat -- $SITE_PAGES
+          fi

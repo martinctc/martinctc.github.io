@@ -1,14 +1,15 @@
 # Working on this repo
 
 Personal website (https://martinctc.github.io), built with R Markdown. Rendered `.html`
-is **committed to git** — there is no CI, so anything not rendered and committed is not live.
-The blog sub-page is a separate Jekyll site; don't touch it.
+is **committed to git** — publishing *is* the deploy (GitHub Pages serves the committed HTML),
+so anything not rendered and committed is not live. The only Actions workflow,
+`render-check.yml`, validates the committed output; it does not deploy. The blog sub-page is a
+separate Jekyll site; don't touch it.
 
 ## Commands
 
 ```R
 rmarkdown::render_site(encoding = "UTF-8")   # full site
-rmarkdown::render('portfolio.Rmd')          # single page, much faster while iterating
 ```
 
 Local preview with the YouTube embed working:
@@ -20,6 +21,14 @@ python -m http.server 8000     # then browse http://localhost:8000/portfolio.htm
 ## The traps that cost the most time
 
 These are all real bugs hit during the portfolio work. Check them before debugging elsewhere.
+
+**Never render a single page with `rmarkdown::render('page.Rmd')`.** `render_site()` forces
+`self_contained: FALSE`, but a bare single-page render defaults to `TRUE` and base64-inlines
+every image, stylesheet and webfont into the HTML. One `render('portfolio.Rmd')` took the
+page from 29 KB to 9.7 MB. It also rewrites a remote `<iframe src=...>` into a
+`data:text/html` URI (verified with pandoc 3.12.1) — browsers refuse to run that, so the
+YouTube embed becomes a plain black box with no error. This is exactly what happened to the
+live portfolio page. Always render the whole site.
 
 **`after_body:` does not add `<script>` tags.** It inlines the file verbatim, so
 `portfolio.js` must contain its own `<script>`/`</script>`. Without them the JS renders
@@ -36,9 +45,19 @@ guessing at fixes.
 **Raw HTML in `.Rmd` must sit at column 0.** Four or more spaces of indent makes Pandoc
 read it as a fenced code block.
 
-**`style.css` is shared by index/about/projects.** New rules need a `.pf-` prefix.
+**`style.css` is shared by index/about/projects.** New rules need a `.pf-` prefix. Under the
+Bootstrap 5 theme it is compiled (via the `.Rmd` `css:` option) into the committed
+`site_libs/bootstrap-5.3.8/bootstrap.min.css`, so **any edit to `style.css` needs a
+`render_site()` before it takes effect** — the compiled theme is a separate tracked artifact.
 
-**Use px, not rem.** Bootstrap 3 sets the root font-size to 10px, so rem units are wrong here.
+**The navbar is white-on-green and AA-constrained.** darkly's default navbar green (`#00bc8c`)
+gives white text only 2.45:1, below WCAG AA. `_site.yml` therefore overrides `navbar-bg` to a
+darker green (`#0a6b52`, white 6.49:1) while `style.css` keeps the nav text white. Don't revert
+the green to `#00bc8c` without rechecking the contrast.
+
+**Use px, not rem.** Bootstrap 3 set a 10px root font-size, which made rem units misleading.
+The Bootstrap 5 theme uses the browser default, but keep new rules in px to match the
+existing stylesheet.
 
 **Windows specifics** — the repo path contains spaces and is inside OneDrive:
 - Renders with the escaped path, e.g. `file:///C:/Users/martinchan/OneDrive%20-%20Microsoft/...`
@@ -65,7 +84,9 @@ the edit tools, and when a file has CRLF endings, match `\r\n` explicitly in rep
 HTTP `Referer`, which is exactly what happens on `file://`. It works fine over `http://`
 and on the deployed site. Don't chase it as a site bug — the embed already carries
 `referrerpolicy="strict-origin-when-cross-origin"`. GitHub Pages sends no restrictive
-`Referrer-Policy`, so no extra header is needed.
+`Referrer-Policy`, so no extra header is needed. If the embed is blank on the *deployed* site
+too, look for a `data:text/html` iframe (a self-contained render inlined it) before blaming
+the embed.
 
 ## Working agreements on this site
 
@@ -78,26 +99,28 @@ and on the deployed site. Don't chase it as a site bug — the embed already car
 
 ## Current open work
 
-**PR #3** — `feat/portfolio-netflix-overhaul` -> `master`, pushed, **not merged**.
-Tracked in `https://github.com/martinctc/martinctc.github.io/pull/3`.
+**PR #4** — `fix/site-audit-remediation` -> `master`, open, CI green (`render-and-check`),
+**not merged**. Tracked in `https://github.com/martinctc/martinctc.github.io/pull/4`. Covers the
+portfolio page size/iframe fix, copy refresh, a11y/SEO, UA removal, dead-asset cleanup and the
+Bootstrap 5 upgrade.
 
 Branches in play:
-- `feat/portfolio-netflix-overhaul` — the PR branch (Netflix-style project rows, `projects.Rmd`)
-- `chore/site-refresh-phase1` — an earlier unmerged branch (index/about copy refresh), left alone
-- Site publishes from `master`. There is no Actions workflow; `master` *is* the deploy.
+- `master` — the live site. Publishing from `master` *is* the deploy (GitHub Pages serves the
+  committed HTML); the only workflow, `render-check.yml`, validates the committed output.
+- `chore/site-refresh-phase1` (PR #2) — earlier index/about copy refresh, still open, left alone.
+- `feat/portfolio-netflix-overhaul` (PR #3) — merged 2026-10-15.
 
-Before merging, the one unverified thing is the YouTube embed **on the live deploy** — it has
+Before merging #4, the one thing unverified is the YouTube embed **on the live deploy** — it has
 only been verified over `http://` locally. Merge, then check the deployed portfolio page.
 
-Copilot left two review findings on PR #3; both were valid and are fixed in `da86df3`
-(invalid `<p></a></p>` card markup, and arrow buttons that were focusable-but-inert
-without JS). The threads show as `outdated`, not `resolved`, so resolve them manually
-if you want the PR tidy.
+Copilot left two findings on PR #4; both fixed (`8df3d6e` scoped the `render-check` guard to the
+site's own pages, `a6a4184` gave the cover image an empty `alt`). Its threads show as `outdated`,
+not `resolved` — resolve manually if you want the PR tidy.
 
 ## Site layout
 
 - `index.Rmd`, `about.Rmd`, `portfolio.Rmd`, `projects.Rmd` — page sources (rendered to `.html`)
-- `_site.yml` — theme and navbar (navbar changes ripple into every committed `.html`)
+- `_site.yml` — theme (bslib Bootstrap 5) and navbar (changes ripple into every committed `.html`)
 - `style.css` — shared stylesheet
 - `portfolio.js` — arrow buttons for the project rows; progressive enhancement only
 - `qa/` — local QA screenshots, gitignored

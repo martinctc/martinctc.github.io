@@ -12,7 +12,12 @@ To render site, run:
 ```R
 rmarkdown::render_site(encoding = "UTF-8")
 ```
-This step renders RMarkdown files into static HTML files to be used. 
+This step renders RMarkdown files into static HTML files to be used.
+
+Always render the whole site with `render_site()`. Do **not** render a single page with
+`rmarkdown::render('page.Rmd')`: unlike `render_site()`, that defaults to
+`self_contained: TRUE` and base64-inlines every image, stylesheet and webfont into the page.
+One portfolio re-render done that way took the page from 29 KB to 9.7 MB.
 
 Edit `_site.yml` to control for site parameters, like the theme and the navigation bar. 
 

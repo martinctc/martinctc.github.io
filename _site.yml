@@ -57,5 +57,7 @@ navbar:
       href: https://github.com/martinctc       # CHANGE HERE 
 output:
   html_document:
-    theme: !expr bslib::bs_theme(version = 5, bootswatch = "darkly", "navbar-bg" = "#00bc8c")
+    # navbar green darkened from the darkly default (#00bc8c) so the white nav
+    # text clears WCAG AA (white 6.49:1, #d9f5ec hover 5.63:1); see AGENTS.md
+    theme: !expr bslib::bs_theme(version = 5, bootswatch = "darkly", "navbar-bg" = "#0a6b52")
     highlight: textmate

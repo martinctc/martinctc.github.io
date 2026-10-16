@@ -50,6 +50,11 @@ Bootstrap 5 theme it is compiled (via the `.Rmd` `css:` option) into the committ
 `site_libs/bootstrap-5.3.8/bootstrap.min.css`, so **any edit to `style.css` needs a
 `render_site()` before it takes effect** — the compiled theme is a separate tracked artifact.
 
+**The navbar is white-on-green and AA-constrained.** darkly's default navbar green (`#00bc8c`)
+gives white text only 2.45:1, below WCAG AA. `_site.yml` therefore overrides `navbar-bg` to a
+darker green (`#0a6b52`, white 6.49:1) while `style.css` keeps the nav text white. Don't revert
+the green to `#00bc8c` without rechecking the contrast.
+
 **Use px, not rem.** Bootstrap 3 set a 10px root font-size, which made rem units misleading.
 The Bootstrap 5 theme uses the browser default, but keep new rules in px to match the
 existing stylesheet.

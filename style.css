@@ -21,10 +21,11 @@
 }
 
 /* Portfolio has no parallax header, so its opening line sits flush under the
-   fixed navbar (index/about are pushed down by their header image). Nudge the
-   first block down so the text clears the bar. */
+   fixed navbar (index/about are pushed down by their header image). The body
+   already clears the bar, so this only needs to add breathing room between the
+   navbar and the first line. */
 .pf-top {
-  padding-top: 24px;
+  padding-top: 48px;
 }
 
 /* This change the style of the main container that wraps the whole R Markdown document. It allows the parallax image to be full width */
@@ -40,7 +41,10 @@
       margin-left: auto;
       margin-right: auto;
       /* font-family: 'Montserrat'; */
-      font-size: 130%;
+      /* Was `130%`, written back when Bootstrap 3 set a 10px root (13px). Under
+         Bootstrap 5 the root is the browser default (16px), so 130% became
+         20.8px. Pin to px rather than a percentage so it can't drift again. */
+      font-size: 17px;
       line-height: 1.7;
       padding-right: 15px;
       padding-left: 15px;

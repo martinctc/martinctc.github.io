@@ -86,6 +86,23 @@ on your own machine.
 
 ---
 
+### Interval Tracks
+
+<p class="pf-back"><a href="portfolio.html">&uarr; All projects</a></p>
+
+_Generated workout audio entirely from code — pick a structure, pick a genre, press play._
+
+<a href="https://martinctc.github.io/interval-tracks/" target="_blank" rel="noopener">
+<img class="pf-shot" src="images/interval-tracks.jpg" alt="Interval Tracks screenshot" width="1280" height="800" loading="lazy" />
+</a>
+
+[Interval Tracks](https://martinctc.github.io/interval-tracks/) is a set of interval workout audio tracks generated entirely from code. Pick a structure (e.g. 45/15, 30/30) and a genre (dubstep, house, techno), and the app generates a workout playlist with text-to-speech guidance through each interval. Everything runs in the browser — no installation required.
+
+- Live app: <https://martinctc.github.io/interval-tracks/>
+- Source code: <https://github.com/martinctc/interval-tracks>
+
+---
+
 ### Dominium
 
 <p class="pf-back"><a href="portfolio.html">&uarr; All projects</a></p>

@@ -95,12 +95,12 @@ In addition, I maintain the following packages as part of my work with Microsoft
 <div class="pf-cap"><div class="pf-oneliner">Analyze and visualize Microsoft Workplace Analytics data in R.</div></div></a>
 </div>
 </div>
+```
 
 <div class="mycontent">
 
 If you have any comments or questions about these packages, please get in touch - any feedback would be valuable!
 
-```
 ---
 
 ## Vibe-coded projects

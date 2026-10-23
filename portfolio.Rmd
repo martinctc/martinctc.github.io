@@ -162,6 +162,10 @@ real-world need of mine.
 For a closer look at each of these projects, I've written up the ideas and
 thinking behind them on the [vibe-coded projects page](projects.html).
 
+</div>
+
+<div class="mycontent">
+
 ---
 
 ## Blogs
@@ -175,8 +179,6 @@ On this same site you can find my [blog](https://martinctc.github.io/blog), wher
 - [Using data.table with magrittr pipes: best of both worlds](https://martinctc.github.io/blog/using-data.table-with-magrittr-pipes-best-of-both-worlds/) - a post on combining the strengths of the wildly popular **tidyverse** and the blazing fast **data.table** packages
 
 - [LondonR: Hadley Wickham & tidyverse's greatest hits](https://martinctc.github.io/blog/londonr-hadley-wickham-and-tidyverse-greatest-hits/) - a post covering the highlights of Hadley Wickham's presentation at LondonR in August 2019.
-
----
 
 ## EARL Conference 2018
 _Enterprise Applications of the R Language Conference (London)_

@@ -89,9 +89,9 @@ a {
    All rules are .pf- prefixed so index/about are unaffected. */
 
 /* Card rows share the 900px prose measure so text and cards sit on one
-   vertical grid. The row scrolls horizontally inside that measure, so the
-   left edge of the first card always aligns with the start of the prose
-   above it, whatever the viewport. */
+   vertical grid, with the left edge of the first card aligned with the
+   start of the prose above it, whatever the viewport. Below the md
+   breakpoint the Bootstrap columns stack one per row (col-12). */
 .pf-rowblock {
   max-width: 900px;
   margin: 26px auto 30px;
@@ -198,9 +198,6 @@ a {
   min-height: 36px;
 }
 
-/* Arrow buttons removed — rows are now static Bootstrap grids */
-.pf-arrow { display: none; }
-
 /* Project screenshots on the write-ups page. width/height attributes on the
    img reserve the box so lazy-loading doesn't shift the text; CSS scales them
    to the shared 900px content measure. */
@@ -220,11 +217,7 @@ a {
 .pf-back a { font-size: 14px; color: #7f8c8d; }
 .pf-back a:hover { color: var(--pf-accent); }
 
-@media (max-width: 768px) {
-  .pf-card { flex-basis: 230px; }
-}
 @media (max-width: 480px) {
-  .pf-card { flex-basis: 200px; }
   .pf-cardtitle { font-size: 14px; }
   .pf-oneliner { font-size: 12px; }
 }
@@ -251,6 +244,6 @@ a {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .pf-card, .pf-arrow { transition: none; }
+  .pf-card { transition: none; }
   .pf-card:hover { transform: none; }
 }

@@ -122,5 +122,4 @@ not `resolved` — resolve manually if you want the PR tidy.
 - `index.Rmd`, `about.Rmd`, `portfolio.Rmd`, `projects.Rmd` — page sources (rendered to `.html`)
 - `_site.yml` — theme (bslib Bootstrap 5) and navbar (changes ripple into every committed `.html`)
 - `style.css` — shared stylesheet
-- `portfolio.js` — arrow buttons for the project rows; progressive enhancement only
 - `qa/` — local QA screenshots, gitignored

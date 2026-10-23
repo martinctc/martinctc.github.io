@@ -85,7 +85,7 @@ a {
 }
 */
 
-/* ===== Portfolio project rows ("Netflix"-style browser) =====
+/* ===== Portfolio project rows (Bootstrap 5 grid) =====
    All rules are .pf- prefixed so index/about are unaffected. */
 
 /* Card rows share the 900px prose measure so text and cards sit on one
@@ -106,22 +106,8 @@ a {
   margin-top: 26px;
 }
 
-.pf-rowwrap { position: relative; }
-
-.pf-row {
-  display: flex;
-  gap: 16px;
-  overflow-x: auto;
-  scroll-snap-type: x proximity;
-  padding: 4px 2px 10px;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-.pf-row::-webkit-scrollbar { display: none; }
-
 .pf-card {
-  flex: 0 0 268px;
-  scroll-snap-align: start;
+  display: block;
   text-decoration: none;
   color: inherit;
   border-radius: 8px;
@@ -212,33 +198,8 @@ a {
   min-height: 36px;
 }
 
-.pf-arrow {
-  position: absolute;
-  top: 40px;
-  z-index: 5;
-  width: 36px;
-  height: 72px;
-  border: none;
-  border-radius: 6px;
-  background: rgba(20,20,20,.82);
-  color: #fff;
-  font-size: 26px;
-  line-height: 1;
-  cursor: pointer;
-  opacity: 0;
-  transition: opacity .15s ease;
-}
-/* Arrow buttons are server-rendered but only become visible once portfolio.js
-   has attached listeners and adds .pf-enhanced. Without JS they stay hidden,
-   so nobody tabs to a control that cannot do anything; the row still scrolls
-   natively via overflow-x. */
-.pf-rowwrap.pf-enhanced:hover .pf-arrow,
-.pf-rowwrap.pf-enhanced:focus-within .pf-arrow { opacity: 1; }
-.pf-arrow:hover { background: rgba(0,0,0,.92); }
-.pf-arrow[disabled] { opacity: 0 !important; pointer-events: none; }
-.pf-arrow--l { left: 6px; }
-.pf-arrow--r { right: 6px; }
-.pf-arrow:focus-visible { outline: 2px solid var(--pf-accent); }
+/* Arrow buttons removed — rows are now static Bootstrap grids */
+.pf-arrow { display: none; }
 
 /* Project screenshots on the write-ups page. width/height attributes on the
    img reserve the box so lazy-loading doesn't shift the text; CSS scales them

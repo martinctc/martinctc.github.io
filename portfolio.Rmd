@@ -103,7 +103,7 @@ If you have any comments or questions about these packages, please get in touch 
 
 ---
 
-## Vibe-coded projects
+## Projects
 
 Alongside R packages, I've recently been building small web apps and tools
 through "vibe coding" — quick, exploratory builds where I use AI-assisted
@@ -161,7 +161,7 @@ real-world need of mine.
 <div class="mycontent">
 
 For a closer look at each of these projects, I've written up the ideas and
-thinking behind them on the [vibe-coded projects page](projects.html).
+thinking behind them on the [projects page](projects.html).
 
 ---
 

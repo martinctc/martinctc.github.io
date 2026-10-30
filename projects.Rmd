@@ -11,7 +11,7 @@ output:
 
 <div class="mycontent">
 
-## Vibe-coded projects
+## Projects
 
 Alongside R packages, I've recently been building small web apps and tools
 through "vibe coding" — quick, exploratory builds where I use AI-assisted

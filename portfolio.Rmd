@@ -103,7 +103,7 @@ If you have any comments or questions about these packages, please get in touch 
 
 ---
 
-## Vibe-coded projects
+## Projects
 
 Alongside R packages, I've recently been building small web apps and tools
 through "vibe coding" — quick, exploratory builds where I use AI-assisted
@@ -132,7 +132,7 @@ real-world need of mine.
 <div class="pf-thumb"><span class="pf-badge">TypeScript</span><img src="images/projects/dominium.jpg" alt="Dominium screenshot" loading="lazy" width="800" height="469"><span class="pf-cardtitle">Dominium</span></div>
 <div class="pf-cap"><div class="pf-oneliner">A turn-based strategy game for 2 to 4 players, playable in the browser.</div></div>
 </a>
-<a class="pf-card col-12 col-md-4" href="https://martinctc.github.io/opencode-dashboard/" target="_blank" rel="noopener">
+<a class="pf-card col-12 col-md-4" href="projects.html#opencode-dashboard">
 <div class="pf-thumb"><span class="pf-badge">Python</span><img src="images/projects/opencode-dashboard.jpg" alt="OpenCode Dashboard screenshot" loading="lazy" width="1376" height="774"><span class="pf-cardtitle">OpenCode Dashboard</span></div>
 <div class="pf-cap"><div class="pf-oneliner">A local, read-only dashboard for exploring your OpenCode token usage.</div></div>
 </a>
@@ -161,7 +161,7 @@ real-world need of mine.
 <div class="mycontent">
 
 For a closer look at each of these projects, I've written up the ideas and
-thinking behind them on the [vibe-coded projects page](projects.html).
+thinking behind them on the [projects page](projects.html).
 
 ---
 

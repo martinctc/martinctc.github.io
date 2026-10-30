@@ -11,7 +11,7 @@ output:
 
 <div class="mycontent">
 
-## Vibe-coded projects
+## Projects
 
 Alongside R packages, I've recently been building small web apps and tools
 through "vibe coding" — quick, exploratory builds where I use AI-assisted
@@ -83,6 +83,27 @@ on your own machine.
 
 - Project page: <https://martinctc.github.io/wrava/>
 - Source code: <https://github.com/martinctc/wrava>
+
+---
+
+### OpenCode Dashboard
+
+<p class="pf-back"><a href="portfolio.html">&uarr; All projects</a></p>
+
+_A local, read-only dashboard for exploring your OpenCode token usage._
+
+<a href="https://martinctc.github.io/opencode-dashboard/" target="_blank" rel="noopener">
+<img class="pf-shot" src="images/projects/opencode-dashboard.jpg" alt="OpenCode Dashboard screenshot" width="1376" height="774" loading="lazy" />
+</a>
+
+[OpenCode Dashboard](https://martinctc.github.io/opencode-dashboard/) exports
+usage recorded by OpenCode from its local SQLite database and turns it into a
+self-contained HTML report. It breaks down tokens, cost, projects, providers,
+and models, and opens entirely offline. The database is read only, so your
+live session data is never modified.
+
+- Project page: <https://martinctc.github.io/opencode-dashboard/>
+- Source code: <https://github.com/martinctc/opencode-dashboard>
 
 ---
 

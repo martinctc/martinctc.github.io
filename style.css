@@ -20,6 +20,29 @@
   color: #d9f5ec;
 }
 
+/* Theme toggle button, injected into .navbar-right by the script in
+   head_extras.html. Mirrors the Bootstrap nav-link box it sits beside
+   (display:block, 16px/24px line box, .5rem padding) so it lines up with
+   the Contact/GitHub items. White on the green navbar = 6.49:1 (AA). */
+.pf-theme-toggle {
+  display: block;
+  padding: 8px 8px;
+  font-size: 16px;
+  line-height: 24px;
+  background: none;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+}
+.pf-theme-toggle:hover,
+.pf-theme-toggle:focus {
+  color: #d9f5ec;
+}
+.pf-theme-toggle:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: -2px;
+}
+
 /* Portfolio has no parallax header, so its opening line sits flush under the
    fixed navbar (index/about are pushed down by their header image). The body
    already clears the bar, so this only needs to add breathing room between the
@@ -246,4 +269,120 @@ a {
 @media (prefers-reduced-motion: reduce) {
   .pf-card { transition: none; }
   .pf-card:hover { transform: none; }
+}
+
+/* ===== Light theme (html[data-theme="light"]) =====
+   The site ships dark: bootswatch darkly puts the dark values in the
+   :root block of the compiled bundle, so "dark" needs no rules of its own
+   - it is the default state and stays pixel-identical. Light mode is
+   opt-in via data-theme="light" on <html>, set before first paint by the
+   inline script in head_extras.html (localStorage choice, else the OS
+   prefers-color-scheme setting).
+
+   How this wins the cascade:
+   - This file is compiled into the END of
+     site_libs/bootstrap-5.3.8/bootstrap.min.css (bslib bundles the Rmd
+     `css:` option), after the :root block at the top of that file.
+   - html[data-theme="light"] has specificity (0,1,1), beating Bootstrap's
+     :root/[data-bs-theme] blocks (0,1,0) regardless of order.
+   - style.css edits only take effect after render_site() recompiles the
+     bundle.
+
+   Bootstrap's native data-bs-theme attribute is deliberately NOT used:
+   in this bundle its "light" block carries darkly's dark values, so
+   flipping it would not produce a light theme. */
+
+html[data-theme="light"] {
+  color-scheme: light;
+
+  /* Bootstrap component variables: swap the darkly palette for a light
+     one without touching the green navbar (static colour, same in both
+     modes by design - its white text is AA-verified on #0a6b52). */
+  --bs-body-bg: #fff;
+  --bs-body-color: #212529;
+  --bs-emphasis-color: #212529;
+  --bs-emphasis-color-rgb: 33, 37, 41;
+  --bs-secondary-color: rgba(33, 37, 41, 0.75);
+  --bs-secondary-bg: #e9ecef;
+  --bs-tertiary-color: rgba(33, 37, 41, 0.5);
+  --bs-tertiary-bg: #f8f9fa;
+  --bs-border-color: #dee2e6;
+
+  /* Links: darkly's green (#00bc8c) is only ~2.2:1 on white. Use the
+     navbar green (#0a6b52, 6.49:1 on white) with a darker hover so prose
+     links stay AA in light mode. */
+  --bs-link-color: #0a6b52;
+  --bs-link-color-rgb: 10, 107, 82;
+  --bs-link-hover-color: #075540;
+  --bs-link-hover-color-rgb: 7, 85, 64;
+
+  /* Site accent: #00bc8c fails AA as text/focus on white (2.2:1), so the
+     light mode accent is the navbar green (6.49:1). Drives focus-visible
+     outlines, :target headings and .pf-back hover via var(--pf-accent). */
+  --pf-accent: #0a6b52;
+  --pf-accent-rgb: 10, 107, 82;
+}
+
+/* Component-scoped overrides. darkly (this bundle) defines the dropdown,
+   card and table variables ON THE COMPONENT SELECTORS themselves, and a
+   custom property declared on an element always beats an inherited one -
+   no matter the specificity of the :root/html rule. So these must be
+   restated where the component sees them, with enough specificity to beat
+   the component's own declaration. */
+
+html[data-theme="light"] .dropdown-menu {
+  --bs-dropdown-bg: #fff;
+  --bs-dropdown-color: #212529;
+  --bs-dropdown-border-color: #dee2e6;
+  --bs-dropdown-divider-bg: #dee2e6;
+  --bs-dropdown-link-color: #212529;
+  --bs-dropdown-link-hover-color: #212529;
+  --bs-dropdown-link-hover-bg: #e9ecef;
+  --bs-dropdown-link-active-bg: #0a6b52;
+  --bs-dropdown-link-active-color: #fff;
+  --bs-dropdown-header-color: #6c757d;
+}
+
+html[data-theme="light"] .card,
+html[data-theme="light"] .well {
+  --bs-card-bg: #fff;
+  --bs-card-color: #212529;
+}
+
+html[data-theme="light"] .table {
+  --bs-table-border-color: #dee2e6;
+}
+
+/* Portfolio cards are flat #2a2a2a in dark mode; on white they become
+   bordered light cards with softer shadows (the dark shadows read as soot
+   on a light page). */
+html[data-theme="light"] .pf-card {
+  background: #fff;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+html[data-theme="light"] .pf-card:hover {
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.16);
+}
+
+/* #9aa0a6 and #7f8c8d are AA failures as small text on white (2.6:1 /
+   3.5:1); #5f6368 is ~5.9:1. */
+html[data-theme="light"] .pf-oneliner {
+  color: #5f6368;
+}
+html[data-theme="light"] .pf-back a {
+  color: #5f6368;
+}
+
+html[data-theme="light"] .pf-shot,
+html[data-theme="light"] .pf-video {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* The badge always sits on the thumbnail's dark gradient overlay, so it
+   keeps the bright green (and its border) even though --pf-accent
+   darkens for white backgrounds. */
+html[data-theme="light"] .pf-badge {
+  color: #00bc8c;
+  border-color: rgba(0, 188, 140, 0.55);
 }

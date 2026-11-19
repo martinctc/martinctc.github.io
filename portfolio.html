@@ -40,6 +40,75 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="theme-color" content="#222222">
+<script>
+/* Light/dark theme. Runs inline while <head> is parsing, before any body
+   content renders, so there is no flash of the wrong theme.
+   Order of preference: explicit choice in localStorage > OS
+   prefers-color-scheme. The toggle button is injected into the navbar
+   further down; without JS the site simply stays dark. */
+(function () {
+  var stored = null;
+  try { stored = window.localStorage.getItem("pf-theme"); } catch (e) {}
+  var explicit = stored === "light" || stored === "dark";
+  var syncButton = null;
+
+  function current() {
+    return document.documentElement.getAttribute("data-theme");
+  }
+
+  function apply(theme) {
+    document.documentElement.setAttribute("data-theme", theme);
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) {
+      meta.setAttribute("content", theme === "light" ? "#ffffff" : "#222222");
+    }
+    if (syncButton) syncButton();
+  }
+
+  apply(explicit ? stored :
+    (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches
+      ? "light" : "dark"));
+
+  /* Until the user makes an explicit choice, follow live OS changes. */
+  if (!explicit && window.matchMedia) {
+    var mq = window.matchMedia("(prefers-color-scheme: light)");
+    var follow = function (e) { if (!explicit) apply(e.matches ? "light" : "dark"); };
+    if (mq.addEventListener) mq.addEventListener("change", follow);
+    else if (mq.addListener) mq.addListener(follow);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var list = document.querySelector(".navbar-right");
+    if (!list) return;
+    var item = document.createElement("li");
+    var button = document.createElement("button");
+    button.type = "button";
+    button.className = "pf-theme-toggle";
+
+    function label() {
+      return current() === "light" ? "Switch to dark mode" : "Switch to light mode";
+    }
+    syncButton = function () {
+      var to = current() === "light" ? "dark" : "light";
+      button.setAttribute("aria-label", label());
+      button.setAttribute("title", label());
+      button.innerHTML =
+        '<i class="fa fa-' + (to === "light" ? "sun" : "moon") + '" aria-hidden="true"></i>';
+    };
+    syncButton();
+
+    button.addEventListener("click", function () {
+      var next = current() === "light" ? "dark" : "light";
+      explicit = true;
+      apply(next);
+      try { window.localStorage.setItem("pf-theme", next); } catch (e) {}
+    });
+
+    item.appendChild(button);
+    list.appendChild(item);
+  });
+})();
+</script>
 <meta name="description" content="A collection of R packages, small web apps, and the odd game — things Martin Chan has built and shipped, mostly as tools for his own use.">
 <link rel="canonical" href="https://martinctc.github.io/portfolio.html">
 <meta property="og:type" content="website">
